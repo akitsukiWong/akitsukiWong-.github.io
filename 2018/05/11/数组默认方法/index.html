@@ -15,7 +15,7 @@
     <meta name="description" content="汪秋月的个人博客">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>hexo的常用命令 · 汪秋月的个人博客</title>
+    <title>数组默认方法 · 汪秋月的个人博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -207,7 +207,7 @@
                 <a href="/" >会写代码的局局</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">hexo的常用命令</a>
+                <a href="#" class="post-name">数组默认方法</a>
             </div>
     </div>
     
@@ -239,7 +239,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            hexo的常用命令
+            数组默认方法
             <!-- 404 -->
             
         </h1>
@@ -257,13 +257,13 @@ height:50vh;
             
                 <div class= post-intro-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "hexo">hexo</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "笔记">笔记</a>
     
 </div>
             
             <div class="post-intro-meta">
                 <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2018/05/10</span>
+                <span class="post-intro-time">2018/05/11</span>
                 
                 <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                     <span class="iconfont-archer">&#xe602;</span>
@@ -389,25 +389,57 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><h3 id="新建一篇文章"><a href="#新建一篇文章" class="headerlink" title="新建一篇文章"></a>新建一篇文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new 新的文章名称</span><br></pre></td></tr></table></figure>
-<p>简写</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n 新的文章名称</span><br></pre></td></tr></table></figure>
-<h3 id="清除缓存文件-db-json-和已生成的静态文件-public"><a href="#清除缓存文件-db-json-和已生成的静态文件-public" class="headerlink" title="清除缓存文件 db.json 和已生成的静态文件 public"></a>清除缓存文件 db.json 和已生成的静态文件 public</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>简写</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<h3 id="自动生成网站静态文件，并部署到设定的仓库"><a href="#自动生成网站静态文件，并部署到设定的仓库" class="headerlink" title="自动生成网站静态文件，并部署到设定的仓库"></a>自动生成网站静态文件，并部署到设定的仓库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>简写</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="启动本地服务器，用于预览主题。"><a href="#启动本地服务器，用于预览主题。" class="headerlink" title="启动本地服务器，用于预览主题。"></a>启动本地服务器，用于预览主题。</h3><p>默认地址： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+        <h1 id="栈方法"><a href="#栈方法" class="headerlink" title="栈方法"></a>栈方法</h1><p><code>push()</code> 接收任意数量的参数逐个添加到数组末尾（从末尾加）</p>
+<p><code>pop()</code> 从数组末尾移除最后一项（删最后一个）</p>
+<h1 id="队列方法"><a href="#队列方法" class="headerlink" title="队列方法"></a>队列方法</h1><p><code>shift()</code> 移除数组中的第一个项（删第一个）</p>
+<p><code>unshift()</code> 在数组前端添加任意个项（从前面加）</p>
+<h1 id="重排列方法"><a href="#重排列方法" class="headerlink" title="重排列方法"></a>重排列方法</h1><p><code>reverse()</code> 翻转数组项的顺序</p>
+<p><code>sort()</code> 升序排列（首字母排序，不是按大小）</p>
+<h2 id="比较函数"><a href="#比较函数" class="headerlink" title="比较函数"></a>比较函数</h2><h3 id="升序"><a href="#升序" class="headerlink" title="升序"></a>升序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function compare(value1, value2) &#123;</span><br><span class="line">            if (value1 &lt; value2) &#123;</span><br><span class="line">                return -1;</span><br><span class="line">            &#125; else if (value1 &gt; value2) &#123;</span><br><span class="line">                return 1;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                return 0;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        var values = [0, 1, 5, 10, 15];</span><br><span class="line">        values.sort(compare);</span><br><span class="line">        alert(values);    //0,1,5,10,15</span><br></pre></td></tr></table></figure>
+<h3 id="降序"><a href="#降序" class="headerlink" title="降序"></a>降序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function compare(value1, value2) &#123;</span><br><span class="line">            if (value1 &lt; value2) &#123;</span><br><span class="line">                return 1;</span><br><span class="line">            &#125; else if (value1 &gt; value2) &#123;</span><br><span class="line">                return -1;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                return 0;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        var values = [0, 1, 5, 10, 15];</span><br><span class="line">        values.sort(compare);</span><br><span class="line">        alert(values);    //15,10,5,1,0</span><br></pre></td></tr></table></figure>
+<h1 id="操作方法"><a href="#操作方法" class="headerlink" title="操作方法"></a>操作方法</h1><p><code>concat()</code> 末尾添加数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">contan( [ &quot;black&quot; , &quot;yellow&quot; , &quot;red&quot; ] )</span><br></pre></td></tr></table></figure>
+<p><code>splice()</code> 数组中部插入项</p>
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p><strong>splice（要删除的第一项的位置， 要删除的项数）</strong></p>
+<p><code>splice( 0, 2 )</code> 删除数组中前两项</p>
+<h2 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h2><p><strong>splice( 起始位置， 0（要删除的项数）， 要插入的项)</strong></p>
+<p><code>splice( 2, 0, &quot;red&quot;, &quot;green&quot; )</code><br>从当前数组的位置2 开始插入字符串“red” 和“green”</p>
+<h2 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h2><p><strong>splice( 起始位置， 要删除的项数， 要插入的任意数量的项)</strong></p>
+<p><code>splice( 2, 1, &quot;red&quot;, &quot;green&quot; )</code> 会删除当前数组位置 2 的项， 然后再从位置 2 开始插入字符串 “red” 和“green”</p>
+<p>例子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var colors = [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;];</span><br><span class="line">var removed = colors.splice(0,1);              //remove the first item</span><br><span class="line">alert(colors);     //green,blue</span><br><span class="line">alert(removed);    //red - one item array</span><br><span class="line">  </span><br><span class="line">removed = colors.splice(1, 0, &quot;yellow&quot;, &quot;orange&quot;);  //insert two items at position 1</span><br><span class="line">alert(colors);     //green,yellow,orange,blue</span><br><span class="line">alert(removed);    //empty array</span><br><span class="line">        </span><br><span class="line">removed = colors.splice(1, 1, &quot;red&quot;, &quot;purple&quot;);    //insert two values, remove one</span><br><span class="line">alert(colors);     //green,red,purple,orange,blue</span><br><span class="line">alert(removed);    //yellow - one item array</span><br></pre></td></tr></table></figure>
+<h1 id="位置方法"><a href="#位置方法" class="headerlink" title="位置方法"></a>位置方法</h1><p><code>indexOf()</code> 从数组的开头（位置0）开始向后查找， 没找到的情况下会返回-1</p>
+<p><code>lastIndexOf</code> 从数组的末尾开始向前查找， 没找到的情况下会返回-1</p>
+<p>例子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var numbers = [1,2,3,4,5,4,3,2,1];</span><br><span class="line"></span><br><span class="line">alert(numbers.indexOf(4));        //3</span><br><span class="line">alert(numbers.lastIndexOf(4));    //5</span><br><span class="line">     </span><br><span class="line">alert(numbers.indexOf(4, 4));     //5</span><br><span class="line">alert(numbers.lastIndexOf(4, 4)); //3       </span><br><span class="line"></span><br><span class="line">var person = &#123; name: &quot;Nicholas&quot; &#125;;</span><br><span class="line">var people = [&#123; name: &quot;Nicholas&quot; &#125;];</span><br><span class="line">var morePeople = [person];</span><br><span class="line">     </span><br><span class="line">alert(people.indexOf(person));     //-1</span><br><span class="line">alert(morePeople.indexOf(person)); //0</span><br></pre></td></tr></table></figure>
+<h1 id="迭代方法"><a href="#迭代方法" class="headerlink" title="迭代方法"></a>迭代方法</h1><p><code>every()</code> 对数组中的每一项运行给定函数， 如果该函数对每一项都返回true， 则返回true。</p>
+<p><code>filter()</code> 对数组中的每一项运行给定函数， 返回该函数会返回 true 的项组成的数组。</p>
+<p><code>forEach()</code> 对数组中的每一项运行给定的函数。 这个方法没有返回值。 </p>
+<p><code>map()</code> 对数组中的每一项运行给定的函数， 返回每次函数调用的结果组成的数组。</p>
+<p><code>some()</code> 对数组中的每一项运行给定的函数， 如果该函数对任一项返回true， 则返回true。</p>
+<p> <strong>以上方法都不会修改数组中的包含的值， 传入这些方法会接受三个参数（数组项的值， 该项在数组中的位置， 数组对象本身）</strong></p>
+<h3 id="every-some-例子"><a href="#every-some-例子" class="headerlink" title="every()   some()  例子"></a>every()   some()  例子</h3><p>以上代码调用的every() 和 some() ， 传入的函数只要给定项大于 2 就会返回true， 对于every()，它返回的是false， 因为只有部分数组项符合条件，对于some() 就返回true， 因为至少有一项是大于 2 的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var numbers = [1,2,3,4,5,4,3,2,1];</span><br><span class="line">        </span><br><span class="line">var everyResult = numbers.every(function(item, index, array)&#123;</span><br><span class="line">    return (item &gt; 2);</span><br><span class="line">&#125;);</span><br><span class="line">        </span><br><span class="line">alert(everyResult);       //false</span><br><span class="line">        </span><br><span class="line">var someResult = numbers.some(function(item, index, array)&#123;</span><br><span class="line">    return (item &gt; 2);</span><br><span class="line">&#125;);</span><br><span class="line">        </span><br><span class="line">alert(someResult);       //true</span><br></pre></td></tr></table></figure>
+<h3 id="filter-例子"><a href="#filter-例子" class="headerlink" title="filter() 例子"></a>filter() 例子</h3><p>通过filter（）方法创建并返回一个所有数值都大于 2 的数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var numbers = [1,2,3,4,5,4,3,2,1];</span><br><span class="line">        </span><br><span class="line">var filterResult = numbers.filter(function(item, index, array)&#123;</span><br><span class="line">    return (item &gt; 2);</span><br><span class="line">&#125;);</span><br><span class="line">        </span><br><span class="line">alert(filterResult);   //[3,4,5,4,3]</span><br></pre></td></tr></table></figure>
+<h3 id="map-例子"><a href="#map-例子" class="headerlink" title="map() 例子"></a>map() 例子</h3><p>给数组中每一项都乘以 2 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var numbers = [1,2,3,4,5,4,3,2,1];</span><br><span class="line">        </span><br><span class="line">var mapResult = numbers.map(function(item, index, array)&#123;</span><br><span class="line">    return item * 2;</span><br><span class="line">        &#125;);</span><br><span class="line">        </span><br><span class="line">alert(mapResult);   //[2,4,6,8,10,8,6,4,2]</span><br></pre></td></tr></table></figure>
+<h3 id="forEach-例子"><a href="#forEach-例子" class="headerlink" title="forEach() 例子"></a>forEach() 例子</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var numbers = [1,2,3,4,5,4,3,2,1];</span><br><span class="line">numbers.forEach(function(item, index, array)&#123;</span><br><span class="line">    //执行某些操作</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h1 id="归并方法"><a href="#归并方法" class="headerlink" title="归并方法"></a>归并方法</h1><p><code>reduce()</code> 从数组第一项开始逐个遍历到最后</p>
+<p><code>reduceRight()</code> 从数组最后一项开始，向前遍历到第一项</p>
+<p><strong>四个参数（前一个值， 当前值， 项的索引， 数组对象）</strong></p>
+<h3 id="reduce-例子"><a href="#reduce-例子" class="headerlink" title="reduce() 例子"></a>reduce() 例子</h3><p><strong>求数组所有值之和</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var values = [1,2,3,4,5];</span><br><span class="line">var sum = values.reduce(function(prev, cur, index, array)&#123;</span><br><span class="line">    return prev + cur;</span><br><span class="line">&#125;);</span><br><span class="line">alert(sum);</span><br></pre></td></tr></table></figure>
+<h3 id="reduceRight-例子"><a href="#reduceRight-例子" class="headerlink" title="reduceRight() 例子"></a>reduceRight() 例子</h3><p><strong>求数组所有值之和</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var values = [1,2,3,4,5];</span><br><span class="line">var sum = values.reduceRight(function(prev, cur, index, array)&#123;</span><br><span class="line">    return prev + cur;</span><br><span class="line">&#125;);</span><br><span class="line">alert(sum);</span><br></pre></td></tr></table></figure>
+
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者: <a href="https://akitsukiwong.github.io">汪秋月</a>
-            <p>原文链接: <a href="https://akitsukiwong.github.io/2018/05/10/hexo的常用命令/">https://akitsukiwong.github.io/2018/05/10/hexo的常用命令/</a>
-            <p>发表日期: <a href="https://akitsukiwong.github.io/2018/05/10/hexo的常用命令/">May 10th 2018, 3:34:20</a>
+            <p>原文链接: <a href="https://akitsukiwong.github.io/2018/05/11/数组默认方法/">https://akitsukiwong.github.io/2018/05/11/数组默认方法/</a>
+            <p>发表日期: <a href="https://akitsukiwong.github.io/2018/05/11/数组默认方法/">May 11th 2018, 3:04:48</a>
             <p>版权声明: 我瞎写的你也信？</p>
         </div>
     
@@ -416,12 +448,17 @@ height:50vh;
         <li class="next">
             
                 <div class="nextSlogan">Next Post</div>
-                <a href= "/2018/05/10/随便做的一个个人简历/" title= 随便做的一个个人简历 >
-                    <div class="nextTitle">随便做的一个个人简历</div>
+                <a href= "/2018/05/11/Markdown学习/" title= Markdown学习 >
+                    <div class="nextTitle">Markdown学习</div>
                 </a>
             
         </li>
         <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2018/05/11/javascript高级程序设计学习笔记/" title= javascript高级程序设计学习笔记 >
+                    <div class="prevTitle">javascript高级程序设计学习笔记</div>
+                </a>
             
         </li>
     </ul>
@@ -528,7 +565,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#指令"><span class="toc-number">1.</span> <span class="toc-text">指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#新建一篇文章"><span class="toc-number">1.1.</span> <span class="toc-text">新建一篇文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#清除缓存文件-db-json-和已生成的静态文件-public"><span class="toc-number">1.2.</span> <span class="toc-text">清除缓存文件 db.json 和已生成的静态文件 public</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成静态文件"><span class="toc-number">1.3.</span> <span class="toc-text">生成静态文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自动生成网站静态文件，并部署到设定的仓库"><span class="toc-number">1.4.</span> <span class="toc-text">自动生成网站静态文件，并部署到设定的仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启动本地服务器，用于预览主题。"><span class="toc-number">1.5.</span> <span class="toc-text">启动本地服务器，用于预览主题。</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#栈方法"><span class="toc-number">1.</span> <span class="toc-text">栈方法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#队列方法"><span class="toc-number">2.</span> <span class="toc-text">队列方法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重排列方法"><span class="toc-number">3.</span> <span class="toc-text">重排列方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#比较函数"><span class="toc-number">3.1.</span> <span class="toc-text">比较函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#升序"><span class="toc-number">3.1.1.</span> <span class="toc-text">升序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#降序"><span class="toc-number">3.1.2.</span> <span class="toc-text">降序</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#操作方法"><span class="toc-number">4.</span> <span class="toc-text">操作方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#删除"><span class="toc-number">4.1.</span> <span class="toc-text">删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#插入"><span class="toc-number">4.2.</span> <span class="toc-text">插入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#替换"><span class="toc-number">4.3.</span> <span class="toc-text">替换</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#位置方法"><span class="toc-number">5.</span> <span class="toc-text">位置方法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#迭代方法"><span class="toc-number">6.</span> <span class="toc-text">迭代方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#every-some-例子"><span class="toc-number">6.0.1.</span> <span class="toc-text">every()   some()  例子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#filter-例子"><span class="toc-number">6.0.2.</span> <span class="toc-text">filter() 例子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#map-例子"><span class="toc-number">6.0.3.</span> <span class="toc-text">map() 例子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#forEach-例子"><span class="toc-number">6.0.4.</span> <span class="toc-text">forEach() 例子</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#归并方法"><span class="toc-number">7.</span> <span class="toc-text">归并方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#reduce-例子"><span class="toc-number">7.0.1.</span> <span class="toc-text">reduce() 例子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#reduceRight-例子"><span class="toc-number">7.0.2.</span> <span class="toc-text">reduceRight() 例子</span></a></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
