@@ -15,7 +15,7 @@
     <meta name="description" content="汪秋月的个人博客">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>随便做的一个个人简历 · 汪秋月的个人博客</title>
+    <title>css画三角形 · 汪秋月的个人博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -207,7 +207,7 @@
                 <a href="/" >敲代码的🐷</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">随便做的一个个人简历</a>
+                <a href="#" class="post-name">css画三角形</a>
             </div>
     </div>
     
@@ -239,7 +239,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            随便做的一个个人简历
+            css画三角形
             <!-- 404 -->
             
         </h1>
@@ -255,17 +255,9 @@ height:50vh;
         
             <!-- 文章页标签  -->
             
-                <div class= post-intro-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "面试">面试</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "简历">简历</a>
-    
-</div>
-            
             <div class="post-intro-meta">
                 <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2018/05/10</span>
+                <span class="post-intro-time">2018/05/12</span>
                 
                 <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                     <span class="iconfont-archer">&#xe602;</span>
@@ -391,16 +383,48 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>码云page地址:</p>
-<p><a href="http://dflxm.oschina.io" target="_blank" rel="noopener">http://dflxm.oschina.io</a></p>
+        <p>也是个面试时候遇到的问题，只要设置两个边框透明就行了,学会了这个之后，妈妈再也不怕我面试的时候被要求画三角形了</p>
+<div style="width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid red;"></div>
+
+
+<p><strong>上三角</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#triangle-up &#123;</span><br><span class="line">width: 0;</span><br><span class="line">height: 0;</span><br><span class="line">border-left: 50px solid transparent;</span><br><span class="line">border-right: 50px solid transparent;</span><br><span class="line">border-bottom: 100px solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<div style="width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-top: 100px solid red;"></div>
+
+<p><strong>下三角</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#triangle-down &#123;</span><br><span class="line">width: 0;</span><br><span class="line">height: 0;</span><br><span class="line">border-left: 50px solid transparent;</span><br><span class="line">border-right: 50px solid transparent;</span><br><span class="line">border-top: 100px solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<div style="width: 0;
+height: 0;
+border-top: 50px solid transparent;
+border-right: 100px solid red;
+border-bottom: 50px solid transparent;"></div>
+
+<p><strong>左三角</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#triangle-left &#123;</span><br><span class="line">width: 0;</span><br><span class="line">height: 0;</span><br><span class="line">border-top: 50px solid transparent;</span><br><span class="line">border-right: 100px solid red;</span><br><span class="line">border-bottom: 50px solid transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<div style="width: 0;
+height: 0;
+border-top: 50px solid transparent;
+border-left: 100px solid red;
+border-bottom: 50px solid transparent;"></div>
+
+<p><strong>右三角</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#triangle-right &#123;</span><br><span class="line">width: 0;</span><br><span class="line">height: 0;</span><br><span class="line">border-top: 50px solid transparent;</span><br><span class="line">border-left: 100px solid red;</span><br><span class="line">border-bottom: 50px solid transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者: <a href="https://akitsukiwong.github.io">汪秋月</a>
-            <p>原文链接: <a href="https://akitsukiwong.github.io/2018/05/10/2018-05-10 随便做的一个个人简历/">https://akitsukiwong.github.io/2018/05/10/2018-05-10 随便做的一个个人简历/</a>
-            <p>发表日期: <a href="https://akitsukiwong.github.io/2018/05/10/2018-05-10 随便做的一个个人简历/">May 10th 2018, 3:44:58</a>
+            <p>原文链接: <a href="https://akitsukiwong.github.io/2018/05/12/css画三角形/">https://akitsukiwong.github.io/2018/05/12/css画三角形/</a>
+            <p>发表日期: <a href="https://akitsukiwong.github.io/2018/05/12/css画三角形/">May 12th 2018, 2:13:43</a>
             <p>版权声明: 我瞎写的你也信？</p>
         </div>
     
@@ -408,17 +432,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2018/05/10/2018-05-10 常见前端面试题/" title= 常见前端面试题 >
-                    <div class="nextTitle">常见前端面试题</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2018/05/10/2018-05-10 hexo的常用命令/" title= hexo的常用命令 >
-                    <div class="prevTitle">hexo的常用命令</div>
+                <a href= "/2018/05/12/ECharts学习/" title= ECharts学习 >
+                    <div class="prevTitle">ECharts学习</div>
                 </a>
             
         </li>
