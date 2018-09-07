@@ -336,6 +336,144 @@
     
     
         <article class="index-post">
+            <a class="abstract-title" href = "/2018/09/07/ES6学习笔记/" >
+                
+                    <span>ES6学习笔记</span>
+            </a>
+            <div class="abstract-content">
+                ES6学习笔记ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准
+let 和 const 命令1. let命令用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。
+for循环的计数器，就很合适使用let命令。
+123456for (let i = 0; i &lt; 10; i++) &#123;  // ...&#125;console.log(i);// ReferenceError: i is not defined
+上面代码中，计数器i只在for循环体内有效，在循环体外引用就会报错。
+下面的代码如果使用v...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/09/07</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2018/09/07/js数据类型/" >
+                
+                    <span>js数据类型</span>
+            </a>
+            <div class="abstract-content">
+                JS数据类型
+概述
+null，undefined 和布尔值
+数值
+字符串
+对象
+函数
+数组
+
+概述简介JavaScript 语言的每一个值，都属于某一种数据类型。JavaScript 的数据类型，共有六种。（ES6 又新增了第七种 Symbol 类型的值，本教程不涉及。）
+
+数值（number）：整数和小数（比如1和3.14）
+字符串（string）：文本（比如Hello World）。
+布尔值（boolean）：表示真伪的两个特殊值，即true（真）和false（假）
+undefined：表示“未定义”或不存在，即由于目前没有定义，所以此处暂时没有任何值
+null：表示空值，即此处的值...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/09/07</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2018/09/07/JS基本语法/" >
+                
+                    <span>JS基本语法</span>
+            </a>
+            <div class="abstract-content">
+                JS基本语法什么是 JavaScript 语言JavaScript 是一种轻量级的脚本语言。所谓“脚本语言”（script language），指的是它不具备开发操作系统的能力，而是只用来编写控制其他大型应用程序（比如浏览器）的“脚本”。
+1. 语句JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句。
+语句（statement）是为了完成某种任务而进行的操作，比如下面就是一行赋值语句。
+1var a = 1 + 3;
+这条语句先用var命令，声明了变量a，然后将1 + 3的运算结果赋值给变量a。
+1 + 3叫做表达式（express...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/09/07</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2018/09/07/学习jquery源码/" >
+                
+                    <span>学习jquery源码</span>
+            </a>
+            <div class="abstract-content">
+                学习jQuery源码笔记1. 立即执行函数IIFE (立即调用的函数表达,Immediately-Invoked Function Expression，简称IIFE)
+123(function() &#123;    /*code*/&#125;)()
+或者123(function() &#123;    /*code*/&#125;())
+IIFE的作用
+不必为函数命名，避免了污染全局变量我们这里直接对匿名函数使用这种“立即执行的函数表达式”，并且在函数的在括号内定义之后立刻调用执行，这样避免为函数命名，减少命名的冲突
+
+IIFE内部形成了一个单独的作用域，可以封装一些外部无法读取的...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/09/07</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2018/07/13/mac-下svn的使用/" >
+                
+                    <span>mac 下svn的使用</span>
+            </a>
+            <div class="abstract-content">
+                原来mac自带了svn，还挺好用的
+以下是一些常用命令：
+1、将文件checkout到本地目录
+1 svn checkout path（path是服务器上的目录）2 例如：svn checkout svn://192.168.1.1/pro/domain3 简写：svn co
+2、往版本库中添加新的文件
+1 svn add file2 例如：svn add test.php(添加test.php)3 svn add *.php(添加当前目录下所有的php文件)
+3、将改动的文件提交到版本库
+1 svn commit -m “LogMessage“ [-N] [–no-unlock] PA...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/07/13</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
             <a class="abstract-title" href = "/2018/07/12/试一下Hexo-Admin好不好用～/" >
                 
                     <span>试一下Hexo Admin好不好用～</span>
@@ -467,157 +605,6 @@ github:https://github.com/bailicangdu/vue2-elm
                 <div class= abstract-tags >
     
         <a class="post-tag" href="javascript:void(0);" data-tags = "css">css</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/12/2018-05-12 ECharts学习/" >
-                
-                    <span>ECharts学习</span>
-            </a>
-            <div class="abstract-content">
-                面试了很多家单位，都问到了ECharts，所以准备一下还是很有必要的
-
-2018-5-27 更新：
-新单位也用到了ECharts，画了几个，也不难，官方文档也很全
-主要就这几个步骤
-
-引用js
-准备放图表的容器
-初始化图表，设置参数
-
-有其它个性化要求，根据官方的文档，改一改配置项都可以快速解决
-
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/12</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/11/2018-05-11 CSS初始化/" >
-                
-                    <span>CSS初始化</span>
-            </a>
-            <div class="abstract-content">
-                
-为什么初始化css?考虑到浏览器兼容性问题，不同浏览器对标签的默认值是不同的
-
-通用初始化样式1234567891011121314151617181920212223242526272829303132333435body&#123; margin: 0;padding: 0;font-family: &quot;微软雅黑&quot;;overflow: hidden;&#125;body,html&#123;-webkit-text-size-adjust: none;width: 100%;height: 100%;&#125;*&#123;text-decoration: no...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/11</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css">css</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/10/2018-05-10 常见前端面试题/" >
-                
-                    <span>常见前端面试题</span>
-            </a>
-            <div class="abstract-content">
-                HTML什么是盒子模型？在网页中，一个元素占有空间的大小由几个部分构成，其中包括元素的内容（content），元素的内边距（padding），元素的边框（border），元素的外边距（margin）四个部分。这四个部分占有的空间中，有的部分可以显示相应的内容，而有的部分只用来分隔相邻的区域或区域。4个部分一起构成了css中元素的盒模型。
-行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？行内元素：a、b、span、img、input、strong、select、label、em、button、textarea块级元素：div、ul、li、dl、dt、dd、p、h1-h6、blo...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/10</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "面试">面试</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/10/2018-05-10 随便做的一个个人简历/" >
-                
-                    <span>随便做的一个个人简历</span>
-            </a>
-            <div class="abstract-content">
-                码云page地址:
-http://dflxm.oschina.io
-
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/10</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "面试">面试</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "简历">简历</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/10/2018-05-10 hexo的常用命令/" >
-                
-                    <span>hexo的常用命令</span>
-            </a>
-            <div class="abstract-content">
-                指令新建一篇文章1$ hexo new 新的文章名称
-简写
-1$ hexo n 新的文章名称
-12345678title: 使用Hexo搭建个人博客layout: postdate: 2014-03-03 19:07:43comments: truecategories: Blogtags: Hexokeywords: Hexo, Blogdescription: 生命在于折腾，又把博客折腾到Hexo了。给Hexo点赞。
-清除缓存文件 db.json 和已生成的静态文件 public1$ hexo clean
-生成静态文件1$ hexo generate
-简写
-1$ hexo g
-自动生...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/10</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "hexo">hexo</a>
     
 </div>
                 
@@ -880,7 +867,72 @@ http://dflxm.oschina.io
     
     
     
-    <div class="total-archive"> Total : 15 </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 20 </div>
     
     <div class="post-archive">
     
@@ -889,6 +941,31 @@ http://dflxm.oschina.io
     
     <div class="archive-year"> 2018 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/JS基本语法/" >JS基本语法</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/js数据类型/" >js数据类型</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/学习jquery源码/" >学习jquery源码</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/ES6学习笔记/" >ES6学习笔记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/13</span><a class="archive-post-title" href= "/2018/07/13/mac-下svn的使用/" >mac 下svn的使用</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -912,12 +989,12 @@ http://dflxm.oschina.io
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/12</span><a class="archive-post-title" href= "/2018/05/12/2018-05-12 ECharts学习/" >ECharts学习</a>
+            <span class="archive-post-date">05/12</span><a class="archive-post-title" href= "/2018/05/12/css画三角形/" >css画三角形</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/12</span><a class="archive-post-title" href= "/2018/05/12/css画三角形/" >css画三角形</a>
+            <span class="archive-post-date">05/12</span><a class="archive-post-title" href= "/2018/05/12/2018-05-12 ECharts学习/" >ECharts学习</a>
         </li>
     
     
@@ -987,17 +1064,17 @@ http://dflxm.oschina.io
     
         <span class="sidebar-tag-name" data-tags="跳转"><span class="iconfont-archer">&#xe606;</span>跳转</span>
     
+        <span class="sidebar-tag-name" data-tags="rem"><span class="iconfont-archer">&#xe606;</span>rem</span>
+    
+        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
+    
         <span class="sidebar-tag-name" data-tags="面试"><span class="iconfont-archer">&#xe606;</span>面试</span>
     
         <span class="sidebar-tag-name" data-tags="简历"><span class="iconfont-archer">&#xe606;</span>简历</span>
     
         <span class="sidebar-tag-name" data-tags="css"><span class="iconfont-archer">&#xe606;</span>css</span>
     
-        <span class="sidebar-tag-name" data-tags="rem"><span class="iconfont-archer">&#xe606;</span>rem</span>
-    
         <span class="sidebar-tag-name" data-tags="css3"><span class="iconfont-archer">&#xe606;</span>css3</span>
-    
-        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>

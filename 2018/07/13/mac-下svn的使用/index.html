@@ -15,7 +15,7 @@
     <meta name="description" content="汪秋月的个人博客">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>汪秋月的个人博客</title>
+    <title>mac 下svn的使用 · 汪秋月的个人博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -70,6 +70,8 @@
 
     <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -191,14 +193,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >敲代码的🐷</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">mac 下svn的使用</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>敲代码的🐷</a>
 </header>
@@ -219,17 +230,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            敲代码的🐷
-            <!-- 文章页  -->
+            mac 下svn的使用
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -237,12 +248,36 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                这个人很懒，什么都没有
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2018/07/13</span>
+                
+                <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                    <span class="iconfont-archer">&#xe602;</span>
+                    <span id="busuanzi_value_page_pv"></span>
+                </span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
         
     </div>
 </div>
@@ -346,393 +381,93 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/09/07/ES6学习笔记/" >
-                
-                    <span>ES6学习笔记</span>
-            </a>
-            <div class="abstract-content">
-                ES6学习笔记ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准
-let 和 const 命令1. let命令用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。
-for循环的计数器，就很合适使用let命令。
-123456for (let i = 0; i &lt; 10; i++) &#123;  // ...&#125;console.log(i);// ReferenceError: i is not defined
-上面代码中，计数器i只在for循环体内有效，在循环体外引用就会报错。
-下面的代码如果使用v...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/09/07</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/09/07/js数据类型/" >
-                
-                    <span>js数据类型</span>
-            </a>
-            <div class="abstract-content">
-                JS数据类型
-概述
-null，undefined 和布尔值
-数值
-字符串
-对象
-函数
-数组
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>原来mac自带了svn，还挺好用的</p>
+<p>以下是一些常用命令：</p>
+<p>1、将文件checkout到本地目录</p>
+<p>1 svn checkout path（path是服务器上的目录）<br>2 例如：svn checkout svn://192.168.1.1/pro/domain<br>3 简写：svn co</p>
+<p>2、往版本库中添加新的文件</p>
+<p>1 svn add file<br>2 例如：svn add test.php(添加test.php)<br>3 svn add *.php(添加当前目录下所有的php文件)</p>
+<p>3、将改动的文件提交到版本库</p>
+<p>1 svn commit -m “LogMessage“ [-N] [–no-unlock] PATH　　　　　　　　(如果选择了保持锁，就使用–no-unlock开关)<br>2 例如：<br>　　svn commit -m “add test file for my test“ test.php<br>3 简写：<br>　　svn ci</p>
+<p>4、加锁/解锁</p>
+<p>1 svn lock -m “LockMessage“ [–force] PATH<br>2 例如：svn lock -m “lock test file“ test.php<br>3 svn unlock PATH</p>
+<p>5、更新到某个版本</p>
+<p>1 svn update -r m path<br>2 例如：<br>3 svn update如果后面没有目录，默认将当前目录以及子目录下的所有文件都更新到最新版本。<br>4 svn update -r 200 test.php(将版本库中的文件test.php还原到版本200)<br>5 svn update test.php(更新，于版本库同步。如果在提交的时候提示过期的话，是因为冲突，需要先update，修改文件，然后清除svn resolved，最后再提交commit)<br>6 简写：svn up</p>
+<p>6、查看文件或者目录状态</p>
+<p>1 1）svn status path（目录下的文件和子目录的状态，正常状态不显示）<br>2 【?：不在svn的控制中；M：内容被修改；C：发生冲突；A：预定加入到版本库；K：被锁定】<br>3 2）svn status -v path(显示文件和子目录状态)<br>4 第一列保持相同，第二列显示工作版本号，第三和第四列显示最后一次修改的版本号和修改人。<br>5 注：svn status、svn diff和 svn revert这三条命令在没有网络的情况下也可以执行的，原因是svn在本地的.svn中保留了本地版本的原始拷贝。<br>6 简写：svn st</p>
+<p>7、删除文件</p>
+<p>1 svn delete path -m “delete test fle“<br>2 例如：svn delete svn://192.168.1.1/pro/domain/test.php -m “delete test file”<br>3 或者直接svn delete test.php 然后再svn ci -m ‘delete test file‘，推荐使用这种<br>4 简写：svn (del, remove, rm)</p>
+<p>8、查看日志</p>
+<p>1 svn log path<br>2 例如：svn log test.php 显示这个文件的所有修改记录，及其版本号的变化</p>
+<p>9、查看文件详细信息</p>
+<p>1 svn info path<br>2 例如：svn info test.php</p>
+<p>10、比较差异</p>
+<p>1 svn diff path(将修改的文件与基础版本比较)<br>2 例如：svn diff test.php<br>3 svn diff -r m:n path(对版本m和版本n比较差异)<br>4 例如：svn diff -r 200:201 test.php<br>5 简写：svn di</p>
+<p>11、将两个版本之间的差异合并到当前文件</p>
+<p>1 svn merge -r m:n path<br>2 例如：svn merge -r 200:205 test.php（将版本200与205之间的差异合并到当前文件，但是一般都会产生冲突，需要处理一下）</p>
+<p>12、SVN 帮助</p>
+<p>1 svn help<br>2 svn help ci</p>
+<p>13、版本库下的文件和目录列表</p>
+<p>1 svn list path<br>2 显示path目录下的所有属于版本库的文件和目录<br>3 简写：svn ls</p>
+<p>14、创建纳入版本控制下的新目录</p>
+<p>复制代码</p>
+<p>1 svn mkdir: 创建纳入版本控制下的新目录。<br>2 用法: 1、mkdir PATH…<br>3 2、mkdir URL…<br>4 创建版本控制的目录。<br>5 1、每一个以工作副本 PATH 指定的目录，都会创建在本地端，并且加入新增<br>6 调度，以待下一次的提交。<br>7 2、每个以URL指定的目录，都会透过立即提交于仓库中创建。<br>8 在这两个情况下，所有的中间目录都必须事先存在</p>
+<p>复制代码</p>
+<p>15、恢复本地修改</p>
+<p>1 svn revert: 恢复原始未改变的工作副本文件 (恢复大部份的本地修改)。revert:<br>2 用法: revert PATH…<br>3 注意: 本子命令不会存取网络，并且会解除冲突的状况。但是它不会恢复<br>4 被删除的目录</p>
+<p>16、代码库URL变更</p>
+<p>复制代码</p>
+<p> 1 svn switch (sw): 更新工作副本至不同的URL。<br> 2 用法: 1、switch URL [PATH]<br> 3 2、switch –relocate FROM TO [PATH…]<br> 4<br> 5 1、更新你的工作副本，映射到一个新的URL，其行为跟“svn update”很像，也会将<br> 6 服务器上文件与本地文件合并。这是将工作副本对应到同一仓库中某个分支或者标记的<br> 7 方法。<br> 8 2、改写工作副本的URL元数据，以反映单纯的URL上的改变。当仓库的根URL变动<br> 9 (比如方案名或是主机名称变动)，但是工作副本仍旧对映到同一仓库的同一目录时使用<br>10 这个命令更新工作副本与仓库的对应关系。</p>
+<p>复制代码</p>
+<p>17、解决冲突</p>
+<p>1 svn resolved: 移除工作副本的目录或文件的“冲突”状态。<br>2 用法: resolved PATH…<br>3 注意: 本子命令不会依语法来解决冲突或是移除冲突标记；它只是移除冲突的<br>4 相关文件，然后让 PATH 可以再次提交。</p>
 
-概述简介JavaScript 语言的每一个值，都属于某一种数据类型。JavaScript 的数据类型，共有六种。（ES6 又新增了第七种 Symbol 类型的值，本教程不涉及。）
-
-数值（number）：整数和小数（比如1和3.14）
-字符串（string）：文本（比如Hello World）。
-布尔值（boolean）：表示真伪的两个特殊值，即true（真）和false（假）
-undefined：表示“未定义”或不存在，即由于目前没有定义，所以此处暂时没有任何值
-null：表示空值，即此处的值...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/09/07</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
+    </article>
+    <!-- license  -->
     
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/09/07/JS基本语法/" >
-                
-                    <span>JS基本语法</span>
-            </a>
-            <div class="abstract-content">
-                JS基本语法什么是 JavaScript 语言JavaScript 是一种轻量级的脚本语言。所谓“脚本语言”（script language），指的是它不具备开发操作系统的能力，而是只用来编写控制其他大型应用程序（比如浏览器）的“脚本”。
-1. 语句JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句。
-语句（statement）是为了完成某种任务而进行的操作，比如下面就是一行赋值语句。
-1var a = 1 + 3;
-这条语句先用var命令，声明了变量a，然后将1 + 3的运算结果赋值给变量a。
-1 + 3叫做表达式（express...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/09/07</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/09/07/学习jquery源码/" >
-                
-                    <span>学习jquery源码</span>
-            </a>
-            <div class="abstract-content">
-                学习jQuery源码笔记1. 立即执行函数IIFE (立即调用的函数表达,Immediately-Invoked Function Expression，简称IIFE)
-123(function() &#123;    /*code*/&#125;)()
-或者123(function() &#123;    /*code*/&#125;())
-IIFE的作用
-不必为函数命名，避免了污染全局变量我们这里直接对匿名函数使用这种“立即执行的函数表达式”，并且在函数的在括号内定义之后立刻调用执行，这样避免为函数命名，减少命名的冲突
-
-IIFE内部形成了一个单独的作用域，可以封装一些外部无法读取的...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/09/07</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/07/13/mac-下svn的使用/" >
-                
-                    <span>mac 下svn的使用</span>
-            </a>
-            <div class="abstract-content">
-                原来mac自带了svn，还挺好用的
-以下是一些常用命令：
-1、将文件checkout到本地目录
-1 svn checkout path（path是服务器上的目录）2 例如：svn checkout svn://192.168.1.1/pro/domain3 简写：svn co
-2、往版本库中添加新的文件
-1 svn add file2 例如：svn add test.php(添加test.php)3 svn add *.php(添加当前目录下所有的php文件)
-3、将改动的文件提交到版本库
-1 svn commit -m “LogMessage“ [-N] [–no-unlock] PA...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/07/13</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/07/12/试一下Hexo-Admin好不好用～/" >
-                
-                    <span>试一下Hexo Admin好不好用～</span>
-            </a>
-            <div class="abstract-content">
-                觉得原始的发blog太麻烦，所以装了个hexo admin 
-现在来尝试下发下博客
-1
-2
-3
-发送！
-
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/07/12</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/19/个页面的大型单页面应用/" >
-                
-                    <span>基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用</span>
-            </a>
-            <div class="abstract-content">
-                https://www.vue-js.com/topic/58abbd21a9c1282817afc28d
-github:https://github.com/bailicangdu/vue2-elm
-
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/19</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/18/css3优惠券-邮票/" >
-                
-                    <span>css3优惠券/邮票</span>
-            </a>
-            <div class="abstract-content">
-                css3写的优惠券/邮票
-码云地址：http://dflxm.gitee.io/code/%E9%82%AE%E7%A5%A8.html
-
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/18</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css3">css3</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/12/css3做banner/" >
-                
-                    <span>css3做banner</span>
-            </a>
-            <div class="abstract-content">
-                也是面试时候遇到的问题,回来随便弄了一个
-在线地址：http://dflxm.oschina.io/code/
-代码
-1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859&lt;!DOCTYPE html&gt;&lt;html&gt;	&lt;head&gt;		&lt;meta charset=&quot;utf-8&quot; /&gt;		&lt;title&gt;css3写一个banner&lt;/title&gt...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/12</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css">css</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/12/css画三角形/" >
-                
-                    <span>css画三角形</span>
-            </a>
-            <div class="abstract-content">
-                面试时候遇到的问题，只要设置两个边框透明就行了,学会了这个，妈妈再也不怕我面试的时候被要求画三角形了
-
-
-
-上三角
-1234567#triangle-up &#123;width: 0;height: 0;border-left: 50px solid transparent;border-right: 50px solid transparent;border-bottom: 100px solid red;&#125;
-
-
-下三角
-1234567#triangle-down &#123;width: 0;height: 0;border-left: 50px solid transp...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/12</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css">css</a>
-    
-</div>
-                
-            </div>
-        </article>
+        <div class="license-wrapper">
+            <p>原文作者: <a href="https://akitsukiwong.github.io">汪秋月</a>
+            <p>原文链接: <a href="https://akitsukiwong.github.io/2018/07/13/mac-下svn的使用/">https://akitsukiwong.github.io/2018/07/13/mac-下svn的使用/</a>
+            <p>发表日期: <a href="https://akitsukiwong.github.io/2018/07/13/mac-下svn的使用/">July 13th 2018, 9:48:15</a>
+            <p>版权声明: 我瞎写的你也信？</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2018/09/07/学习jquery源码/" title= 学习jquery源码 >
+                    <div class="nextTitle">学习jquery源码</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2018/07/12/试一下Hexo-Admin好不好用～/" title= 试一下Hexo Admin好不好用～ >
+                    <div class="prevTitle">试一下Hexo Admin好不好用～</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-    <nav class="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">NEXT &#62;</a>
-    </nav>
     
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
-            
-            <div class="profile">
-    <img class="profile-avatar" src= /avatar/Misaka.jpg >
-    <div class="profile-name">汪秋月</div>
-    
-    <div class="profile-signature">
-        联系我
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
-            
-                <a href="mailto:335098623@qq.com" class="iconfont-archer email" title=email ></a>
-            
-        
-    
-        
-            
-                <a href="//github.com/akitsukiWong" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
-    
-        
-            
-                <span class="iconfont-archer wechat" title=wechat>
-                  
-                  <img class="profile-qr" src="/assets/wx.png" />
-                </span>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href= //dflxm.oschina.io target="_black">我的简历</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href= //gitee.com/DFLXM target="_black">我的码云</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href= //www.imooc.com/ target="_black">慕课网</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href= //www.google.com target="_black">必应</a>
-                    </span>
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href = "/about" >ABOUT ME</a>
-        </div>
-    
-</div>
             
         </div>
         <footer class="footer footer-unloaded">
@@ -805,6 +540,24 @@ github:https://github.com/bailicangdu/vue2-elm
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1259,6 +1012,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
     
     </body>
 </html>
