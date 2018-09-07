@@ -191,8 +191,10 @@
 </head>
 
     
+        <body class="home-body">
     
-<header class="header">
+    
+<header class="header index-header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
@@ -210,21 +212,34 @@
 
 
 
+height:50vh;
+
 >
     
     <!-- 主页  -->
+    
+    
+    <!-- 文章页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
+            敲代码的🐷
+            <!-- 文章页  -->
+            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
+            
+            
+                这个人很懒，什么都没有
+            
+            <!-- 文章页  -->
             
         </p>
         <!-- 文章页meta -->
@@ -336,96 +351,54 @@
     
     
         <article class="index-post">
-            <a class="abstract-title" href = "/2017/12/18/2017-12-18 rem-js/" >
+            <a class="abstract-title" href = "/2017/11/13/2017-11-13 Markdown学习/" >
                 
-                    <span>rem.js</span>
+                    <span>Markdown学习</span>
             </a>
             <div class="abstract-content">
-                12345678910111213window.onload = function()&#123;    /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是      为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/    getRem(750,100)&#125;;window.onresize = function()&#123;    getRem(750,100)&#125;;function getRem(pwidth,prem)&#123;    var html = d...
+                一级标题H1二级标题H2三级标题H3四级标题H4五级标题H5六级标题H6无序列表
+列表1
+列表2
+列表3
+
+或者
+列表1
+列表1
+列表1
+
+再或者
+列表1
+列表1
+列表1
+
+引用
+这个样子引用，啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
+
+还有个二级的引用，哈哈哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或
+
+三级的引用，看了啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
+
+
+回归一级吧，记得要空一行
+
+例子
+这是一个标题。
+这是第一行列表项。
+这是第二行列表项。
+
+给出一些例子代码：
+return shell_exec(&quot;ech...
             </div>
             <div class="abstract-post-meta">
                 <!-- date  -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/12/18</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/11/13</span>
                 </div>
                 <!-- tags  -->
                 
                 <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "js">js</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "rem">rem</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2017/12/18/2017-12-18 pc端移动端跳转js/" >
-                
-                    <span>pc端移动端跳转js</span>
-            </a>
-            <div class="abstract-content">
-                经常用到的跳转代码
-
-if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {    window.location.href=”你的手机版地址”;}else{    window.location.href=”你的电脑版地址”;} 
-
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/12/18</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "js">js</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "跳转">跳转</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2017/12/01/2017-12-01 javascript高级程序设计学习笔记/" >
-                
-                    <span>javascript高级程序设计学习笔记</span>
-            </a>
-            <div class="abstract-content">
-                第一章 HTML中使用JavaScriptscript元素script中有六个属性
-
-async
-charset
-defer
-language
-src
-type
-
-标签的位置传统做法放在&lt;head&gt;中，js会被先加载页面会有延迟
-所以把JavaScript引入放在&lt;body&gt;元素中页面元素的后面
-这样先加载页面内容，用户会因为空白页面时间缩短而感到页面打开速度加快
-延迟脚本HTML 4.01为&lt;script&gt;标签定义了defer属性。
-相当于告诉浏览器立即下载延迟执行。
-1&lt;script type=&quot;text/javascript&qu...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/12/01</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "js">js</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Markdown">Markdown</a>
     
 </div>
                 
@@ -434,8 +407,111 @@ type
     
     <!-- paginator  -->
     
+    <nav class="page-nav">
+        <a class="extend prev" rel="prev" href="/page/2/">&#60; PREV</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
+    
 </main>
             <!-- profile -->
+            
+            <div class="profile">
+    <img class="profile-avatar" src= /avatar/Misaka.jpg >
+    <div class="profile-name">汪秋月</div>
+    
+    <div class="profile-signature">
+        联系我
+    </div>
+    
+    
+    <div class="profile-social">
+        
+    
+        
+            
+                <a href="mailto:335098623@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/akitsukiWong" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/assets/wx.png" />
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    
+        <div class="friends">
+            <div>FRIENDS</div>
+            
+                
+                    <span>
+                        <a href= //dflxm.oschina.io target="_black">我的简历</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href= //gitee.com/DFLXM target="_black">我的码云</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href= //www.imooc.com/ target="_black">慕课网</a>
+                    </span>
+                
+            
+                
+                    <span>
+                        <a href= //www.google.com target="_black">必应</a>
+                    </span>
+                
+            
+        </div>
+    
+    
+        <div class="about-me">
+            <a href = "/about" >ABOUT ME</a>
+        </div>
+    
+</div>
             
         </div>
         <footer class="footer footer-unloaded">
