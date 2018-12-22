@@ -15,7 +15,7 @@
     <meta name="description" content="汪秋月的个人博客">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>汪秋月的个人博客</title>
+    <title>mac 下svn的使用 · 汪秋月的个人博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -331,71 +331,81 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/10/25/vue生命周期钩子/" >
-                
-                    <span>vue生命周期钩子</span>
-            </a>
-            <div class="abstract-content">
-                1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;    &lt;title&gt;&lt;/title&gt;    &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdeli...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/25</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/10/25/SQL语句学习/" >
-                
-                    <span>SQL语句学习</span>
-            </a>
-            <div class="abstract-content">
-                SQL语句学习上周试着用Express去搭后台 , 搭好了一个基础的框架 , 后端还是挺有意思的 
-我如果需要更丰富的功能就需要学习更多的SQL语句 , 所以这周的计划是学习SQL语句
-学习的主要途径是看W3C的文档
-链接
-SQL 简介SQL 是用于访问和处理数据库的标准的计算机语言。
-什么是 SQL？
-SQL 指结构化查询语言
-SQL 使我们有能力访问数据库
-SQL 是一种 ANSI (美国国家标准化组织) 的标准计算机语言
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>原来mac自带了svn，还挺好用的</p>
+<p>以下是一些常用命令：</p>
+<p>1、将文件checkout到本地目录</p>
+<p>1 svn checkout path（path是服务器上的目录）<br>2 例如：svn checkout svn://192.168.1.1/pro/domain<br>3 简写：svn co</p>
+<p>2、往版本库中添加新的文件</p>
+<p>1 svn add file<br>2 例如：svn add test.php(添加test.php)<br>3 svn add *.php(添加当前目录下所有的php文件)</p>
+<p>3、将改动的文件提交到版本库</p>
+<p>1 svn commit -m “LogMessage“ [-N] [–no-unlock] PATH　　　　　　　　(如果选择了保持锁，就使用–no-unlock开关)<br>2 例如：<br>　　svn commit -m “add test file for my test“ test.php<br>3 简写：<br>　　svn ci</p>
+<p>4、加锁/解锁</p>
+<p>1 svn lock -m “LockMessage“ [–force] PATH<br>2 例如：svn lock -m “lock test file“ test.php<br>3 svn unlock PATH</p>
+<p>5、更新到某个版本</p>
+<p>1 svn update -r m path<br>2 例如：<br>3 svn update如果后面没有目录，默认将当前目录以及子目录下的所有文件都更新到最新版本。<br>4 svn update -r 200 test.php(将版本库中的文件test.php还原到版本200)<br>5 svn update test.php(更新，于版本库同步。如果在提交的时候提示过期的话，是因为冲突，需要先update，修改文件，然后清除svn resolved，最后再提交commit)<br>6 简写：svn up</p>
+<p>6、查看文件或者目录状态</p>
+<p>1 1）svn status path（目录下的文件和子目录的状态，正常状态不显示）<br>2 【?：不在svn的控制中；M：内容被修改；C：发生冲突；A：预定加入到版本库；K：被锁定】<br>3 2）svn status -v path(显示文件和子目录状态)<br>4 第一列保持相同，第二列显示工作版本号，第三和第四列显示最后一次修改的版本号和修改人。<br>5 注：svn status、svn diff和 svn revert这三条命令在没有网络的情况下也可以执行的，原因是svn在本地的.svn中保留了本地版本的原始拷贝。<br>6 简写：svn st</p>
+<p>7、删除文件</p>
+<p>1 svn delete path -m “delete test fle“<br>2 例如：svn delete svn://192.168.1.1/pro/domain/test.php -m “delete test file”<br>3 或者直接svn delete test.php 然后再svn ci -m ‘delete test file‘，推荐使用这种<br>4 简写：svn (del, remove, rm)</p>
+<p>8、查看日志</p>
+<p>1 svn log path<br>2 例如：svn log test.php 显示这个文件的所有修改记录，及其版本号的变化</p>
+<p>9、查看文件详细信息</p>
+<p>1 svn info path<br>2 例如：svn info test.php</p>
+<p>10、比较差异</p>
+<p>1 svn diff path(将修改的文件与基础版本比较)<br>2 例如：svn diff test.php<br>3 svn diff -r m:n path(对版本m和版本n比较差异)<br>4 例如：svn diff -r 200:201 test.php<br>5 简写：svn di</p>
+<p>11、将两个版本之间的差异合并到当前文件</p>
+<p>1 svn merge -r m:n path<br>2 例如：svn merge -r 200:205 test.php（将版本200与205之间的差异合并到当前文件，但是一般都会产生冲突，需要处理一下）</p>
+<p>12、SVN 帮助</p>
+<p>1 svn help<br>2 svn help ci</p>
+<p>13、版本库下的文件和目录列表</p>
+<p>1 svn list path<br>2 显示path目录下的所有属于版本库的文件和目录<br>3 简写：svn ls</p>
+<p>14、创建纳入版本控制下的新目录</p>
+<p>复制代码</p>
+<p>1 svn mkdir: 创建纳入版本控制下的新目录。<br>2 用法: 1、mkdir PATH…<br>3 2、mkdir URL…<br>4 创建版本控制的目录。<br>5 1、每一个以工作副本 PATH 指定的目录，都会创建在本地端，并且加入新增<br>6 调度，以待下一次的提交。<br>7 2、每个以URL指定的目录，都会透过立即提交于仓库中创建。<br>8 在这两个情况下，所有的中间目录都必须事先存在</p>
+<p>复制代码</p>
+<p>15、恢复本地修改</p>
+<p>1 svn revert: 恢复原始未改变的工作副本文件 (恢复大部份的本地修改)。revert:<br>2 用法: revert PATH…<br>3 注意: 本子命令不会存取网络，并且会解除冲突的状况。但是它不会恢复<br>4 被删除的目录</p>
+<p>16、代码库URL变更</p>
+<p>复制代码</p>
+<p> 1 svn switch (sw): 更新工作副本至不同的URL。<br> 2 用法: 1、switch URL [PATH]<br> 3 2、switch –relocate FROM TO [PATH…]<br> 4<br> 5 1、更新你的工作副本，映射到一个新的URL，其行为跟“svn update”很像，也会将<br> 6 服务器上文件与本地文件合并。这是将工作副本对应到同一仓库中某个分支或者标记的<br> 7 方法。<br> 8 2、改写工作副本的URL元数据，以反映单纯的URL上的改变。当仓库的根URL变动<br> 9 (比如方案名或是主机名称变动)，但是工作副本仍旧对映到同一仓库的同一目录时使用<br>10 这个命令更新工作副本与仓库的对应关系。</p>
+<p>复制代码</p>
+<p>17、解决冲突</p>
+<p>1 svn resolved: 移除工作副本的目录或文件的“冲突”状态。<br>2 用法: resolved PATH…<br>3 注意: 本子命令不会依语法来解决冲突或是移除冲突标记；它只是移除冲突的<br>4 相关文件，然后让 PATH 可以再次提交。</p>
 
-SQL 能做什么？
-SQL 面向数据库执行查询
-SQL 可从数据库取回数据
-SQL 可在数据库中插入新的记录
-SQL 可更新数据库中的数据
-SQL 可从数据库删...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/25</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
+    </article>
+    <!-- license  -->
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "SQL">SQL</a>
-    
-</div>
-                
-            </div>
-        </article>
+        <div class="license-wrapper">
+            <p>原文作者: <a href="https://akitsukiwong.github.io">汪秋月</a>
+            <p>原文链接: <a href="https://akitsukiwong.github.io/md/mac-下svn的使用.html">https://akitsukiwong.github.io/md/mac-下svn的使用.html</a>
+            <p>发表日期: <a href="https://akitsukiwong.github.io/md/mac-下svn的使用.html">July 13th 2018, 9:48:15</a>
+            <p>版权声明: 我瞎写的你也信？</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             

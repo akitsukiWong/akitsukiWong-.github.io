@@ -15,7 +15,7 @@
     <meta name="description" content="汪秋月的个人博客">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>汪秋月的个人博客</title>
+    <title>常见前端面试题 · 汪秋月的个人博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -331,71 +331,107 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><h2 id="什么是盒子模型？"><a href="#什么是盒子模型？" class="headerlink" title="什么是盒子模型？"></a>什么是盒子模型？</h2><p>在网页中，一个元素占有空间的大小由几个部分构成，其中包括元素的内容（content），元素的内边距（padding），元素的边框（border），元素的外边距（margin）四个部分。这四个部分占有的空间中，有的部分可以显示相应的内容，而有的部分只用来分隔相邻的区域或区域。4个部分一起构成了css中元素的盒模型。</p>
+<h2 id="行内元素有哪些？块级元素有哪些？-空-void-元素有那些？"><a href="#行内元素有哪些？块级元素有哪些？-空-void-元素有那些？" class="headerlink" title="行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？"></a>行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h2><p>行内元素：a、b、span、img、input、strong、select、label、em、button、textarea<br>块级元素：div、ul、li、dl、dt、dd、p、h1-h6、blockquote<br>空元素：即系没有内容的HTML元素，例如：br、meta、hr、link、input、img</p>
+<h2 id="块元素与内联元素的区别？"><a href="#块元素与内联元素的区别？" class="headerlink" title="块元素与内联元素的区别？"></a>块元素与内联元素的区别？</h2><p>1.块元素，总是在新行上开始；内联元素，和其他元素都在一行上。</p>
+<p>2.块元素，能容纳其他块元素或内联元素；内联元素，只能容纳文本或者其他内联元素。</p>
+<p>3.块元素中高度，行高以及顶和底边距都可控制；内联元素中高，行高及顶和底边距不可改变。  </p>
+<h2 id="常见的块级元素"><a href="#常见的块级元素" class="headerlink" title="常见的块级元素"></a>常见的块级元素</h2><ul>
+<li>address – 地址</li>
+<li>blockquote – 块引用</li>
+<li>center – 举中对齐块</li>
+<li>dir – 目录列表</li>
+<li>div – 常用块级容易，也是CSS layout的主要标签</li>
+<li>dl – 定义列表</li>
+<li>fieldset – form控制组</li>
+<li>form – 交互表单</li>
+<li>h1 – 大标题</li>
+<li>h2 – 副标题</li>
+<li>h3 – 3级标题</li>
+<li>h4 – 4级标题</li>
+<li>h5 – 5级标题</li>
+<li>h6 – 6级标题</li>
+<li>hr – 水平分隔线</li>
+<li>isindex – input prompt</li>
+<li>menu – 菜单列表</li>
+<li>noframes – frames可选内容，（对于不支持frame的浏览器显示此区块内容</li>
+<li>noscript – 可选脚本内容（对于不支持script的浏览器显示此内容）</li>
+<li>ol – 有序表单</li>
+<li>p – 段落</li>
+<li>pre – 格式化文本</li>
+<li>table – 表格</li>
+<li>ul – 无序列表</li>
+</ul>
+<h2 id="常见的内联元素"><a href="#常见的内联元素" class="headerlink" title="常见的内联元素"></a>常见的内联元素</h2><ul>
+<li>a – 锚点</li>
+<li>abbr – 缩写</li>
+<li>acronym – 首字</li>
+<li>b – 粗体(不推荐)</li>
+<li>bdo – bidi override</li>
+<li>big – 大字体</li>
+<li>br – 换行</li>
+<li>cite – 引用</li>
+<li>code – 计算机代码(在引用源码的时候需要)</li>
+<li>dfn – 定义字段</li>
+<li>em – 强调</li>
+<li>font – 字体设定(不推荐)</li>
+<li>i – 斜体</li>
+<li>img – 图片</li>
+<li>input – 输入框</li>
+<li>kbd – 定义键盘文本</li>
+<li>label – 表格标签</li>
+<li>q – 短引用</li>
+<li>s – 中划线(不推荐)</li>
+<li>samp – 定义范例计算机代码</li>
+<li>select – 项目选择</li>
+<li>small – 小字体文本</li>
+<li>span – 常用内联容器，定义文本内区块</li>
+<li>strike – 中划线</li>
+<li>strong – 粗体强调</li>
+<li>sub – 下标</li>
+<li>sup – 上标</li>
+<li>textarea – 多行文本输入框</li>
+<li>tt – 电传文本</li>
+<li>u – 下划线</li>
+</ul>
+<h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="CSS实现垂直水平居中"><a href="#CSS实现垂直水平居中" class="headerlink" title="CSS实现垂直水平居中"></a>CSS实现垂直水平居中</h2><h1 id="js"><a href="#js" class="headerlink" title="js"></a>js</h1><h2 id="如何理解闭包？"><a href="#如何理解闭包？" class="headerlink" title="如何理解闭包？"></a>如何理解闭包？</h2><p>定义和用法：当一个函数的返回值是另外一个函数，而返回的那个函数如果调用了其父函数内部的其它变量，如果返回的这个函数在外部被执行，就产生了闭包。</p>
+<p>表现形式：使函数外部能够调用函数内部定义的变量。</p>
+<h1 id="jQuery相关"><a href="#jQuery相关" class="headerlink" title="jQuery相关"></a>jQuery相关</h1><h2 id="jQuery库中的-是什么？"><a href="#jQuery库中的-是什么？" class="headerlink" title="jQuery库中的$()是什么？"></a>jQuery库中的<code>$()</code>是什么？</h2><p>$()函数是jQuery()函数的别称。$()函数用于将任何对象包裹成 jQuery 对象，接着你就被允许调用定义在 jQuery 对象上的多个不同方法。你可以将一个选择器字符串传入 $()函数，它会返回一个包含所有匹配的 DOM 元素数组的 jQuery 对象。</p>
+<h1 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h1>
+    </article>
+    <!-- license  -->
     
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/10/25/vue生命周期钩子/" >
-                
-                    <span>vue生命周期钩子</span>
-            </a>
-            <div class="abstract-content">
-                1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;    &lt;title&gt;&lt;/title&gt;    &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdeli...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/25</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/10/25/SQL语句学习/" >
-                
-                    <span>SQL语句学习</span>
-            </a>
-            <div class="abstract-content">
-                SQL语句学习上周试着用Express去搭后台 , 搭好了一个基础的框架 , 后端还是挺有意思的 
-我如果需要更丰富的功能就需要学习更多的SQL语句 , 所以这周的计划是学习SQL语句
-学习的主要途径是看W3C的文档
-链接
-SQL 简介SQL 是用于访问和处理数据库的标准的计算机语言。
-什么是 SQL？
-SQL 指结构化查询语言
-SQL 使我们有能力访问数据库
-SQL 是一种 ANSI (美国国家标准化组织) 的标准计算机语言
-
-SQL 能做什么？
-SQL 面向数据库执行查询
-SQL 可从数据库取回数据
-SQL 可在数据库中插入新的记录
-SQL 可更新数据库中的数据
-SQL 可从数据库删...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/25</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "SQL">SQL</a>
-    
-</div>
-                
-            </div>
-        </article>
+        <div class="license-wrapper">
+            <p>原文作者: <a href="https://akitsukiwong.github.io">汪秋月</a>
+            <p>原文链接: <a href="https://akitsukiwong.github.io/md/2018-05-10 常见前端面试题.html">https://akitsukiwong.github.io/md/2018-05-10 常见前端面试题.html</a>
+            <p>发表日期: <a href="https://akitsukiwong.github.io/md/2018-05-10 常见前端面试题.html">May 10th 2018, 10:20:58</a>
+            <p>版权声明: 我瞎写的你也信？</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             

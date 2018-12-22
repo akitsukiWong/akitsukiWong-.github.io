@@ -15,7 +15,7 @@
     <meta name="description" content="汪秋月的个人博客">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>汪秋月的个人博客</title>
+    <title>webpack之proxyTable设置跨域 · 汪秋月的个人博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -331,71 +331,45 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>###webpack之proxyTable设置跨域</p>
+<p>使用vue-cli搭建的vue项目可以使用在项目内设置代理（proxyTable）的方式来解决跨域问题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">proxyTable: &#123;</span><br><span class="line">      &apos;/api&apos;: &#123;</span><br><span class="line">        target: &apos;http://www.ykt.com/&apos;,//接口域名</span><br><span class="line">        changeOrigin: true,//是否跨域</span><br><span class="line">        pathRewrite: &#123;</span><br><span class="line">          &apos;^/api&apos;: &apos;/index/index&apos;//需要rewrite重写</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>实现效果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost:8080/api/getbuildcate   ===&gt;  www.ykt.com/index/index/getbuildcate</span><br></pre></td></tr></table></figure>
+    </article>
+    <!-- license  -->
     
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/10/25/vue生命周期钩子/" >
-                
-                    <span>vue生命周期钩子</span>
-            </a>
-            <div class="abstract-content">
-                1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;    &lt;title&gt;&lt;/title&gt;    &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdeli...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/25</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/10/25/SQL语句学习/" >
-                
-                    <span>SQL语句学习</span>
-            </a>
-            <div class="abstract-content">
-                SQL语句学习上周试着用Express去搭后台 , 搭好了一个基础的框架 , 后端还是挺有意思的 
-我如果需要更丰富的功能就需要学习更多的SQL语句 , 所以这周的计划是学习SQL语句
-学习的主要途径是看W3C的文档
-链接
-SQL 简介SQL 是用于访问和处理数据库的标准的计算机语言。
-什么是 SQL？
-SQL 指结构化查询语言
-SQL 使我们有能力访问数据库
-SQL 是一种 ANSI (美国国家标准化组织) 的标准计算机语言
-
-SQL 能做什么？
-SQL 面向数据库执行查询
-SQL 可从数据库取回数据
-SQL 可在数据库中插入新的记录
-SQL 可更新数据库中的数据
-SQL 可从数据库删...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/25</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "SQL">SQL</a>
-    
-</div>
-                
-            </div>
-        </article>
+        <div class="license-wrapper">
+            <p>原文作者: <a href="https://akitsukiwong.github.io">汪秋月</a>
+            <p>原文链接: <a href="https://akitsukiwong.github.io/md/webpack之proxyTable设置跨域.html">https://akitsukiwong.github.io/md/webpack之proxyTable设置跨域.html</a>
+            <p>发表日期: <a href="https://akitsukiwong.github.io/md/webpack之proxyTable设置跨域.html">September 29th 2018, 8:44:03</a>
+            <p>版权声明: 我瞎写的你也信？</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             

@@ -15,7 +15,7 @@
     <meta name="description" content="汪秋月的个人博客">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>汪秋月的个人博客</title>
+    <title>写插件教程 · 汪秋月的个人博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -331,71 +331,42 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/10/25/vue生命周期钩子/" >
-                
-                    <span>vue生命周期钩子</span>
-            </a>
-            <div class="abstract-content">
-                1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;    &lt;title&gt;&lt;/title&gt;    &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdeli...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/25</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/10/25/SQL语句学习/" >
-                
-                    <span>SQL语句学习</span>
-            </a>
-            <div class="abstract-content">
-                SQL语句学习上周试着用Express去搭后台 , 搭好了一个基础的框架 , 后端还是挺有意思的 
-我如果需要更丰富的功能就需要学习更多的SQL语句 , 所以这周的计划是学习SQL语句
-学习的主要途径是看W3C的文档
-链接
-SQL 简介SQL 是用于访问和处理数据库的标准的计算机语言。
-什么是 SQL？
-SQL 指结构化查询语言
-SQL 使我们有能力访问数据库
-SQL 是一种 ANSI (美国国家标准化组织) 的标准计算机语言
+            <main class="main post-page">
+    <article class="article-entry">
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;UTF-8&quot; /&gt;</span><br><span class="line">        &lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">        &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">            #demo-1, #demo-2 &#123;</span><br><span class="line">                width: 200px;</span><br><span class="line">                height: 200px;</span><br><span class="line">                border: 1px solid #ddd;</span><br><span class="line">            &#125;</span><br><span class="line">        &lt;/style&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;h3&gt;点击add可以添加个自input的内容到div里并实现变颜色&lt;/h3&gt;</span><br><span class="line">        &lt;!--组件实例1--&gt;</span><br><span class="line">        &lt;div id=&quot;demo-1&quot;&gt;</span><br><span class="line">            &lt;input type=&quot;&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;好的&quot; /&gt;</span><br><span class="line">            &lt;button id=&quot;add-1&quot;&gt;add&lt;/button&gt;</span><br><span class="line">        &lt;/div&gt; &lt;br /&gt; &lt;br /&gt;</span><br><span class="line">        &lt;!--组件实例2--&gt;</span><br><span class="line">        &lt;div id=&quot;demo-2&quot;&gt;</span><br><span class="line">            &lt;input type=&quot;&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;11&quot; /&gt;</span><br><span class="line">            &lt;button id=&quot;add-2&quot;&gt;add&lt;/button&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">            //这里是插件的代码；我为了方便都写到一个html中了；请把这个script标签中的内容单独写在一个js文件里</span><br><span class="line">            //整个插件写在一个立即执行函数里；就是function()&#123;&#125;();函数自执行；保证里面的变量不会与外界互相影响</span><br><span class="line">            //头部的win啊,doc啊 $  啊都是底部的window,document,jQuery的映射；方便内部直接调用；</span><br><span class="line">            //当然你不引用jq的话头部的$和底部的jQuery干掉；你若引用了更过的依赖可以依次添加；</span><br><span class="line">            //最后面的undefined可不写；最好写了；保证里面再出现的undefined是未定义的意思；不被其他东西赋值；</span><br><span class="line">            //好了下面是时候展现真正的技术了</span><br><span class="line">            //function前的!号(叹号)或者;(分号)这不是写错了,为了防止那个二货写的js结束没有分号；而可能发生报错</span><br><span class="line">            /*</span><br><span class="line"> ;function(win,doc,$,undefined)&#123; </span><br><span class="line">           </span><br><span class="line">&#125;(window,document,jQuery)</span><br><span class="line"> </span><br><span class="line">或者写在一个闭包里(function()&#123;</span><br><span class="line"> </span><br><span class="line">　　　　　　　　　　&#125;())</span><br><span class="line"> </span><br><span class="line">  */</span><br><span class="line">            (function(win, doc, undefined) &#123;</span><br><span class="line">                //我们随便写一个插件吧 比如你要点击按钮  添加input的值到 div里</span><br><span class="line">                var addHtml = function(demo, btn) &#123; //插件名，调用的时候直接new一下插件名就行了并传参数或者传对象(一般这个函数名手写字母大写比较好，构造函数嘛，其实也是函数)</span><br><span class="line">                    //很明显我要传id名；这里传什么都可以的其实；</span><br><span class="line">                    this.div = doc.getElementById(demo); //为什么把获取的id传给this.div呢？this的指向为调用的实例；我们此时姑且认为this就指向这个函数；因为这样我们之后再想获取这个div就可以直接用this.div了好吗；而不是在document.getElementById（。。。。）</span><br><span class="line">                    this.btn = doc.getElementById(btn);</span><br><span class="line">                    this.Input = this.div.getElementsByTagName(&quot;input&quot;)[0]; //既然找到了div我们在找下div下面的input；当然你要不input用获取id的形式传参数我没有意见</span><br><span class="line">                    this.num = 0; //你也可以写一些其他的默认的东西；比如默认的变量啦；方便下面调用；这里写了什么都不会报错；只是有用没用的问题这行可以忽略</span><br><span class="line">                    this.author = &quot;lianxiaozhuang&quot;;</span><br><span class="line">                    this.init(); //执行下你下面写的函数吧；你想想；如果整个插件没有执行函数；多不好；一堆方法function就不调用；对；这里是调用的时候最开始执行的函数</span><br><span class="line">                &#125;</span><br><span class="line">                //；给构造函数addHtml对象原型里添加属性（方法）</span><br><span class="line">                addHtml.prototype = &#123; //给函数写方法；这里可能不止一个函数；你还记得你在全局里写一个个的function吗；贼乱；</span><br><span class="line">                    //找也不好找；把一个个函数都写到对象的属性里；调用函数就直接调用对象的属性；</span><br><span class="line">                    constructor: addHtml, //构造器指向构造函数；这行其实不写没啥毛病；不过有时候防止构造器指向Object的情况；你还是装逼写上吧；</span><br><span class="line">                    init: function() &#123; //这里的init；你也可以写成  nimade:function()&#123; &#125;都没有问题；就是在addHtml函数里this.init();执行下；你明白了这里的this了吧；整个插件里this都是只得这个函数（实例）；除非你又引入了其他的函数里的（其他函数里的可能指向就是window了）</span><br><span class="line">                        var _self = this; ////把this保存下来防止在局部函数内部取不到（局部函数内部取得this可能是别的）</span><br><span class="line">                        this.btn.onclick = function() &#123;</span><br><span class="line">                            var _val = _self.Input.value;</span><br><span class="line">                            var tempdiv = doc.createElement(&quot;div&quot;); //创建临时div存放获取input的值</span><br><span class="line">                            tempdiv.innerHTML = _val;</span><br><span class="line">                            //console.log(tempdiv);</span><br><span class="line">                            _self.div.appendChild(tempdiv);</span><br><span class="line">                            _self.setColor(); //你把所有方法都写在init里绝对没问题；还是那句话；说好的松耦合呢；说好的不写一堆堆的function一层层乱套呢</span><br><span class="line">                        &#125;;</span><br><span class="line">                    &#125;,</span><br><span class="line">                    setColor: function() &#123;</span><br><span class="line">                        //console.log(this.div)</span><br><span class="line">                        this.div.style.color = &quot;red&quot;</span><br><span class="line">                    &#125;</span><br><span class="line">                    /*,</span><br><span class="line">                            otherFun()&#123;</span><br><span class="line">                                //当然你还可以扩展其他方法；这些方法之间都可以互相调用；</span><br><span class="line">                                只要用this.方法名       就行了；如果在取不到this比如上面的click函数中的this指向点击的button；只要在写var _self = this;就可以用_self  代替this（函数实例）了；当然_self  也可以写成别的 比如$this等自定义的</span><br><span class="line">                            &#125;*/</span><br><span class="line">                &#125;</span><br><span class="line">                win.addHtml = addHtml; //把这个对象附给window底下的 名字叫addHtml的对象；要不你调用的时候  new addHtml() 怕在window的环境下找不到；</span><br><span class="line">            &#125;(window, document))</span><br><span class="line">        &lt;/script&gt;</span><br><span class="line">        &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">            new addHtml(&quot;demo-1&quot;, &quot;add-1&quot;); //这里是实例1调用插件的代码</span><br><span class="line">            new addHtml(&quot;demo-2&quot;, &quot;add-2&quot;); //这里是实例2调用插件的代码</span><br><span class="line">            //是不是明白为什么要写插件了；要封装；两个相同组件即使有相同的class名在dom操作的时候也不会相互冲突；因为他们都new出来了个自的实例；有自己的this；有自己的一套方法了（其实方法都在原型里是公用的；操作各自的dom）</span><br><span class="line">        &lt;/script&gt;</span><br><span class="line">        &lt;!--这里是最简单的插件写法；当然还有传对象参数的插件等等。。。。--&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-SQL 能做什么？
-SQL 面向数据库执行查询
-SQL 可从数据库取回数据
-SQL 可在数据库中插入新的记录
-SQL 可更新数据库中的数据
-SQL 可从数据库删...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/25</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
+    </article>
+    <!-- license  -->
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "SQL">SQL</a>
-    
-</div>
-                
-            </div>
-        </article>
+        <div class="license-wrapper">
+            <p>原文作者: <a href="https://akitsukiwong.github.io">汪秋月</a>
+            <p>原文链接: <a href="https://akitsukiwong.github.io/md/写插件教程.html">https://akitsukiwong.github.io/md/写插件教程.html</a>
+            <p>发表日期: <a href="https://akitsukiwong.github.io/md/写插件教程.html">September 7th 2018, 2:45:37</a>
+            <p>版权声明: 我瞎写的你也信？</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             

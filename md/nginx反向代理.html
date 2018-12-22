@@ -15,7 +15,7 @@
     <meta name="description" content="汪秋月的个人博客">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>汪秋月的个人博客</title>
+    <title>nginx反向代理 · 汪秋月的个人博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -331,71 +331,66 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/10/25/vue生命周期钩子/" >
-                
-                    <span>vue生命周期钩子</span>
-            </a>
-            <div class="abstract-content">
-                1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;    &lt;title&gt;&lt;/title&gt;    &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdeli...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/25</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/10/25/SQL语句学习/" >
-                
-                    <span>SQL语句学习</span>
-            </a>
-            <div class="abstract-content">
-                SQL语句学习上周试着用Express去搭后台 , 搭好了一个基础的框架 , 后端还是挺有意思的 
-我如果需要更丰富的功能就需要学习更多的SQL语句 , 所以这周的计划是学习SQL语句
-学习的主要途径是看W3C的文档
-链接
-SQL 简介SQL 是用于访问和处理数据库的标准的计算机语言。
-什么是 SQL？
-SQL 指结构化查询语言
-SQL 使我们有能力访问数据库
-SQL 是一种 ANSI (美国国家标准化组织) 的标准计算机语言
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>###nginx反向代理</p>
+<p>1.下载nginx</p>
+<p><a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">http://nginx.org/en/download.html</a>         下载稳定版本，以nginx/Windows-1.12.2为例，直接下载 nginx-1.12.2.zip</p>
+<p>2.启动nginx</p>
+<p>有很多种方法启动nginx</p>
+<p>(1)直接双击nginx.exe，双击后一个黑色的弹窗一闪而过</p>
+<p>(2)打开cmd命令窗口，切换到nginx解压目录下，输入命令 nginx.exe 或者 start nginx ，回车即可</p>
+<p>3.检查nginx是否启动成功</p>
+<p>直接在浏览器地址栏输入网址 <a href="http://localhost:80，回车，出现以下页面说明启动成功" target="_blank" rel="noopener">http://localhost:80，回车，出现以下页面说明启动成功</a></p>
+<h4 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h4><p>1.定义</p>
+<p>跨域是指a页面想获取b页面资源，如果a、b页面的协议、域名、端口、子域名不同，所进行的访问行动都是跨域的，而浏览器为了安全问题一般都限制了跨域访问，也就是不允许跨域请求资源。注意：跨域限制访问，其实是浏览器的限制。理解这一点很重要！！！</p>
+<p>2.跨域访问示例</p>
+<p>假设有两个网站，A网站部署在：<a href="http://localhost:81" target="_blank" rel="noopener">http://localhost:81</a> 即本地ip端口81上；B网站部署在：<a href="http://localhost:82" target="_blank" rel="noopener">http://localhost:82</a> 即本地ip端口82上。</p>
+<p>关于nginx的配置可以查看另一篇博文：<a href="http://www.cnblogs.com/renjing/p/6126284.html。找到nginx的配置文件“nginx.conf”，修改一下信息" target="_blank" rel="noopener">http://www.cnblogs.com/renjing/p/6126284.html。找到nginx的配置文件“nginx.conf”，修改一下信息</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">        listen       80; #监听80端口，可以改成其他端口</span><br><span class="line">        server_name  localhost; # 当前服务的域名</span><br><span class="line"></span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line"></span><br><span class="line">        location / &#123;</span><br><span class="line">            proxy_pass http://localhost:81;</span><br><span class="line">            proxy_redirect default;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">		location /apis &#123; #添加访问目录为/apis的代理配置</span><br><span class="line">			rewrite  ^/apis/(.*)$ /$1 break;</span><br><span class="line">			proxy_pass   http://localhost:82;</span><br><span class="line">       &#125;</span><br><span class="line">#以下配置省略</span><br></pre></td></tr></table></figure>
+<p>配置解释：</p>
+<p>1.由配置信息可知，我们让nginx监听localhost的80端口，网站A与网站B的访问都是经过localhost的80端口进行访问。</p>
+<p>2.我们特殊配置了一个“/apis”目录的访问，并且对url执行了重写，最后使以“/apis”开头的地址都转到“<a href="http://localhost:82”进行处理。" target="_blank" rel="noopener">http://localhost:82”进行处理。</a></p>
+<p>3.rewrite  ^/apis/(.*)$ /$1 break; </p>
+<p>代表重写拦截进来的请求，并且只能对域名后边以“/apis”开头的起作用，例如<a href="http://www.a.com/apis/msg?x=1重写。只对/apis重写。" target="_blank" rel="noopener">www.a.com/apis/msg?x=1重写。只对/apis重写。</a></p>
+<p>　　rewrite后面的参数是一个简单的正则 ^/apis/(.*)$ ,$1代表正则中的第一个(),$2代表第二个()的值,以此类推。</p>
+<p>　　break代表匹配一个之后停止匹配。</p>
+<p>访问地址修改</p>
+<p>既然配置了nginx，那么所有的访问都要走nginx，而不是走网站原本的地址（A网站localhost:81,B网站localhost:82）。所以要修改A网站中的ajax访问地址，把访问地址由</p>
+<p>“<a href="http://localhost:82/api/values”改成》》》“/apis/api/values”。" target="_blank" rel="noopener">http://localhost:82/api/values”改成》》》“/apis/api/values”。</a></p>
 
-SQL 能做什么？
-SQL 面向数据库执行查询
-SQL 可从数据库取回数据
-SQL 可在数据库中插入新的记录
-SQL 可更新数据库中的数据
-SQL 可从数据库删...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/25</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
+    </article>
+    <!-- license  -->
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "SQL">SQL</a>
-    
-</div>
-                
-            </div>
-        </article>
+        <div class="license-wrapper">
+            <p>原文作者: <a href="https://akitsukiwong.github.io">汪秋月</a>
+            <p>原文链接: <a href="https://akitsukiwong.github.io/md/nginx反向代理.html">https://akitsukiwong.github.io/md/nginx反向代理.html</a>
+            <p>发表日期: <a href="https://akitsukiwong.github.io/md/nginx反向代理.html">September 29th 2018, 8:45:22</a>
+            <p>版权声明: 我瞎写的你也信？</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
