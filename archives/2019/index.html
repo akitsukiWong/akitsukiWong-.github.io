@@ -336,18 +336,163 @@
     
     
         <article class="index-post">
-            <a class="abstract-title" href = "/2019/04/28/尝试下hexo搬迁换电脑/" >
+            <a class="abstract-title" href = "/2019/11/18/高阶组件（Higher-Order Components）/" >
                 
-                    <span>尝试下hexo搬迁换电脑</span>
+                    <span>理解高阶组件</span>
             </a>
             <div class="abstract-content">
-                在家里发布测试文章
+                前言
+
+有时候人们很喜欢造一些名字很吓人的名词，让人一听这个名词就觉得自己不可能学会，从而让人望而却步。但是其实这些名词背后所代表的东西其实很简单不能说高阶组件就是这么一个东西。但是它是一个概念上很简单，但却非常常用、实用的东西，被大量 React.js 相关的第三方库频繁地使用。在前端的业务开发当中，你不掌握高阶组件其实也可以完成项目的开发，但是如果你能够灵活地使用高阶组件，可以让你代码更加优雅，复用性、灵活性更强。它是一个加分项，而且加的分还不少。
+—–    React.js 小书
+
+想要理解 高阶组件 ，我们得先来回顾一下 高阶函数 的定义
+高阶函数(Higher-Order F...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/18</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/11/13/React-Hook/" >
+                
+                    <span>React Hook</span>
+            </a>
+            <div class="abstract-content">
+                Hook 简介Hook 是 React 16.8 的新增特性。它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性。
+没有破坏性改动
+完全可选的。 你无需重写任何已有代码就可以在一些组件中尝试 Hook。但是如果你不想，你不必现在就去学习或使用 Hook。
+
+100% 向后兼容的。 Hook 不包含任何破坏性改动。
+
+现在可用。
+
+
+动机
+在组件之间复用状态逻辑很难
+
+复杂组件变得难以理解
+
+难以理解的 class
+
+用更少的代码，实现同样的效果
+
+
+渐进策略
+没有计划从 React 中移除 class。
+
+Hook 不会影响你对 React 概念的理解...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/13</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/10/22/Lottie/" >
+                
+                    <span>Lottie</span>
+            </a>
+            <div class="abstract-content">
+                Lottie 是什么Lottie 是 Airbnb 开源的一个动画渲染库，可应用于 Android, iOS, Web, React Native 等平台。
+Lottie 支持渲染播放 AE 动画，通过Bodymovin解析AE动画，并导出可在移动端和web端渲染动画的json文件。换言之，设计师用AE把动画效果做出来，再用Bodymovin导出相应地json文件给到前端，前端使用Lottie库就可以实现动画效果。
+为什么使用 Lottie设计使用AE设计出炫酷动画，开发实现十分困难，极其复杂。毕竟开发工程师要通过代码把动效实现出来，数值什么的都是开发通过设计给了效果图去猜测，实现出来了...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/22</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/10/15/mobx/" >
+                
+                    <span>mobx</span>
+            </a>
+            <div class="abstract-content">
+                介绍
+mobx 对比 redux
+开发难度低
+开发代码量少
+渲染性能好
+
+核心思想状态变化引起的副作用应该被自动触发
+原则单向数据流，动作改变状态
+
+Mobx的核心原理是通过action触发state的变化，进而触发state的衍生对象。
+当状态改变时，所有衍生都会进行原子级的自动更新。因此永远不可能观察到中间值。
+所有衍生默认都是同步更新。这意味着例如动作可以在改变状态之后直接可以安全地检查计算值。
+计算值 是延迟更新的。任何不在使用状态的计算值将不会更新，直到需要它进行副作用（I / O）操作时。 如果视图不再使用，那么它会自动被垃圾回收。
+所有的计算值都应该是纯净的。它们不应该用来...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/15</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/09/26/tslint-json的配置项说明/" >
+                
+                    <span>tslint.json的配置项说明</span>
+            </a>
+            <div class="abstract-content">
+                12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667extends: 内设配置项名称rules:  规则  &#123;    //ts专用    adjacent-overload-signatures ： true,  //  Enforces function overloads to be consecutive.    ban-comma-operator：true, //禁止逗号运...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/26</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/09/19/mac-生成文件tree/" >
+                
+                    <span>mac 生成树形目录图</span>
+            </a>
+            <div class="abstract-content">
+                方法一：mac本身可以使用如下命令来生成树形图：1find . -print | sed -e &apos;s;[^/]*/;|____;g;s;____|; |;g&apos;
+方法二：使用tree工具：1brew install tree
+123tree                         #打印所有目录层级tree -L 2                    #遍历2层tree &gt; README.md             #输出结果到 Markdown 文档
 
             </div>
             <div class="abstract-post-meta">
                 <!-- date  -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/28</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/19</span>
                 </div>
                 <!-- tags  -->
                 
@@ -357,19 +502,47 @@
     
     
         <article class="index-post">
-            <a class="abstract-title" href = "/2019/04/02/同事去面试跟我说的面试题/" >
+            <a class="abstract-title" href = "/2019/09/03/lodash学习/" >
                 
-                    <span>同事去参加面试的面试题</span>
+                    <span>lodash学习</span>
             </a>
             <div class="abstract-content">
-                我们因为单位要搬迁，而且上面不告诉我们具体的搬迁时间，弄的我们人心惶惶，生怕错过了三金四银跳槽期，我的很多同事已经去找新工作了，下面记一下他们告诉我的，他们这几天去面试的面试题目
-ES6有哪些新属性Let和const关键字
+                为什么选择 LodashLodash 通过降低 array、number、objects、string 等等的使用难度从而让 JavaScript 变得更简单。Lodash 的模块化方法 非常适用于：
+
+遍历 array、object 和 string
+对值进行操作和检测
+创建符合功能的函数
+
+Array_.chunk将数组（array）拆分成多个 size 长度的区块，并将这些区块组成一个新数组。 如果array 无法被分割成全部等长的区块，那么最后剩余的元素将组成一个区块。
+12345_.chunk([&apos;a&apos;, &apos;b&apos;, &apos;c&apo...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/09/01/重构个人网站/" >
+                
+                    <span>重构个人网站</span>
+            </a>
+            <div class="abstract-content">
+                之前写的个人网站是 vue + express + mysql，后端使用iview-admin
+准备重构成 react + typescript + nestjs + mysql，后端基于antd-admin
+编辑器使用markdown编辑器：for-editor
 
             </div>
             <div class="abstract-post-meta">
                 <!-- date  -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/02</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/01</span>
                 </div>
                 <!-- tags  -->
                 
@@ -379,106 +552,50 @@ ES6有哪些新属性Let和const关键字
     
     
         <article class="index-post">
-            <a class="abstract-title" href = "/2019/04/01/这四年前端自我总结/" >
+            <a class="abstract-title" href = "/2019/08/21/TS分享准备/" >
                 
-                    <span>这四年前端的自我总结</span>
+                    <span>TS分享准备</span>
             </a>
             <div class="abstract-content">
-                开场自我介绍我没有参加过前端的培训，全靠自学，我的自学能力着实很强，不知道我算不算科班出身，我大学学习的专业是计算机通信工程，其实相对于其它计算机专业来说我的专业可能跟偏向于通信行业，常规的计算机课程，操作系统数据结构之类的我也是都有学习过，前端当初也只是有稍微接触，那时候用的还是老旧的table布局。
-刚毕业的时候很迷茫，不知道找什么工作，去了新区的人才市场面试了一个工程师的职位，后来谁知道是进了厂，做了几个月觉得自己像一个废人，流水线的工作不适合我，周围的同事也都是一些教育水平不高的人，没有共同话题，没有理想。
-在厂里每天做着重复的劳动也让我思考了很多，关于未来，我觉得年轻人还是应该...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/01</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2019/04/01/js-面试题/" >
-                
-                    <span>js 面试题</span>
-            </a>
-            <div class="abstract-content">
-                js的基本数据类型  Undefined、Null、Boolean、Number、String、  ECMAScript 2015 新增:Symbol(创建后独一无二且不可变的数据类型 )
-js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
- 数据封装类对象：Object、Array、Boolean、Number 和 String 其他对象：Function、Arguments、Math、Date、RegExp、Error
-原型与原型链proto是每个对象都有的一个属性，而prototype是函数才会有的属性!!!
-123Object.__proto__ ==...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/01</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2019/04/01/CSS面试题/" >
-                
-                    <span>css 面试题</span>
-            </a>
-            <div class="abstract-content">
-                页面导入样式时，使用link和@import有什么区别？1234- link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;- 页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;- import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;- link支持使用js控制DOM去改变样式，而@import不支持;
-介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？123（1）有两种， IE 盒子模型、W...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/01</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2019/04/01/HTML面试题/" >
-                
-                    <span>HTML面试题</span>
-            </a>
-            <div class="abstract-content">
-                HTML行内元素、块状元素、行内块状元素的区别块级元素：块级大多为结构性标记
-12345678910111213141516171819&lt;address&gt;...&lt;/adderss&gt;   &lt;center&gt;...&lt;/center&gt;  地址文字&lt;h1&gt;...&lt;/h1&gt;  标题一级&lt;h2&gt;...&lt;/h2&gt;  标题二级&lt;h3&gt;...&lt;/h3&gt;  标题三级&lt;h4&gt;...&lt;/h4&gt;  标题四级&lt;h5&gt;...&lt;/h5&gt;  标题五级&lt;...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/01</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2019/04/01/卸磨杀驴/" >
-                
-                    <span>卸磨杀驴</span>
-            </a>
-            <div class="abstract-content">
-                做开发太容易被卸磨杀驴了，第二次了
+                为什么要使用typeScript1. IDE代码提示，类型推论，自动补全，提高敲代码的效率
 
+typeScript极大优化了编辑器的友好度，代码的提示功能会在您输入字符的同时自动在光标的相应位置弹出。
+其提示列表是基于一定的顺序排列，并非按照字母顺序排列，十分好用。
+当代码中没有明确的指定类型时，ts会依照类型推论的规则自动推断出类型。
+使用ts之后你就会发现磨刀不误砍柴工，你为类型正确花费的时间是值得的
+
+2. 增加代码可读性
+
+类型是最好的注释
+
+3. 采用TypeScript进行改造可以移除Babel全家桶，减小包体积，同时增加强类型约束从而避免今后开发时可能的问题
+
+ts自带了语...
             </div>
             <div class="abstract-post-meta">
                 <!-- date  -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/01</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/21</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/08/15/tsconfig-json/" >
+                
+                    <span>tsconfig.json配置项</span>
+            </a>
+            <div class="abstract-content">
+                编译选项1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&#123;  &quot;compilerOptions&quot;: &#123;    /* 基本选项 */    &quot;target&quot;: &quot;es5&quot;,                       // 指定 ECMAScript 目标版本: &apos;ES3&apos; (default), &apos;ES5&apos;, &apos;ES2...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/15</span>
                 </div>
                 <!-- tags  -->
                 
@@ -486,6 +603,10 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
         </article>
     
     <!-- paginator  -->
+    
+    <nav class="page-nav">
+        <span class="page-number current">1</span><a class="page-number" href="/archives/2019/page/2/">2</a><a class="extend next" rel="next" href="/archives/2019/page/2/">NEXT &#62;</a>
+    </nav>
     
 </main>
             <!-- profile -->
@@ -1112,49 +1233,709 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
     
     
     
-    <div class="total-archive"> Total : 38 </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 66 </div>
     
     <div class="post-archive">
     
     
     
     
+    <div class="archive-year"> 2021 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/05</span><a class="archive-post-title" href= "/2021/02/05/canvas/" >canvas</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/23</span><a class="archive-post-title" href= "/2020/11/23/PMP考试/" >PMP考试</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2020/09/04/Grid布局/" >Grid布局</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2020/09/04/Untitled/" >高阶组件 与 render props</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2020/09/04/ESLint/" >ESLint</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/27</span><a class="archive-post-title" href= "/2020/03/27/vscode常用插件/" >vscode常用插件</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/24</span><a class="archive-post-title" href= "/2020/03/24/Chrome浏览器查看代码利用率/" >Chrome浏览器查看代码利用率</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/20</span><a class="archive-post-title" href= "/2020/03/20/今天遇到的一个git错误/" >遇到了一个git错误，记录一下</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/13</span><a class="archive-post-title" href= "/2020/03/13/如何在谷歌上搜索/" >谷歌搜索小技巧</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/12</span><a class="archive-post-title" href= "/2020/03/12/webpack4-babel7构建React应用/" >webpack4+babel7构建React应用</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/11</span><a class="archive-post-title" href= "/2020/03/11/使用SonarScanner进行代码质量检查/" >使用SonarScanner进行代码质量检查</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/10</span><a class="archive-post-title" href= "/2020/03/10/每天一个设计模式——工厂模式/" >每天一个设计模式——工厂模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/10</span><a class="archive-post-title" href= "/2020/03/10/每天一个设计模式——单例模式/" >每天一个设计模式——单例模式</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/28</span><a class="archive-post-title" href= "/2019/04/28/尝试下hexo搬迁换电脑/" >尝试下hexo搬迁换电脑</a>
+            <span class="archive-post-date">11/18</span><a class="archive-post-title" href= "/2019/11/18/高阶组件（Higher-Order Components）/" >理解高阶组件</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/02</span><a class="archive-post-title" href= "/2019/04/02/同事去面试跟我说的面试题/" >同事去参加面试的面试题</a>
+            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2019/11/13/React-Hook/" >React Hook</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/CSS面试题/" >css 面试题</a>
+            <span class="archive-post-date">10/22</span><a class="archive-post-title" href= "/2019/10/22/Lottie/" >Lottie</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/卸磨杀驴/" >卸磨杀驴</a>
+            <span class="archive-post-date">10/15</span><a class="archive-post-title" href= "/2019/10/15/mobx/" >mobx</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/js-面试题/" >js 面试题</a>
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2019/09/26/tslint-json的配置项说明/" >tslint.json的配置项说明</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/HTML面试题/" >HTML面试题</a>
+            <span class="archive-post-date">09/19</span><a class="archive-post-title" href= "/2019/09/19/mac-生成文件tree/" >mac 生成树形目录图</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/这四年前端自我总结/" >这四年前端的自我总结</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/lodash学习/" >lodash学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/01</span><a class="archive-post-title" href= "/2019/09/01/重构个人网站/" >重构个人网站</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/TS分享准备/" >TS分享准备</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/15</span><a class="archive-post-title" href= "/2019/08/15/tsconfig-json/" >tsconfig.json配置项</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/14</span><a class="archive-post-title" href= "/2019/08/14/SSR/" >SSR(ShadowsocksX-NG-R)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/14</span><a class="archive-post-title" href= "/2019/08/14/node版本控制工具nvm/" >node版本控制工具nvm</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/08</span><a class="archive-post-title" href= "/2019/08/08/npm-scripts-使用指南/" >npm scripts 使用</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/05</span><a class="archive-post-title" href= "/2019/08/05/test/" >mac 终端主题配置</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/16</span><a class="archive-post-title" href= "/2019/07/16/前端面试总结/" >前端面试题(vue)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/27</span><a class="archive-post-title" href= "/2019/06/27/TypeScript学习/" >TypeScript学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/17</span><a class="archive-post-title" href= "/2019/05/17/面向对象/" >设计模式学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/CSS面试题/" >前端面试题（css）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/HTML面试题/" >前端面试题（html）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/js-面试题/" >前端面试题（js）</a>
         </li>
     
     
@@ -1178,22 +1959,12 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/25</span><a class="archive-post-title" href= "/2018/10/25/vue生命周期钩子/" >vue生命周期钩子</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">10/25</span><a class="archive-post-title" href= "/2018/10/25/SQL语句学习/" >SQL语句学习</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/SPA-（单页应用程序）/" >SPA （单页应用程序）</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/webpack之proxyTable设置跨域/" >webpack之proxyTable设置跨域</a>
+            <span class="archive-post-date">10/02</span><a class="archive-post-title" href= "/2018/10/02/vue生命周期钩子/" >vue生命周期钩子</a>
         </li>
     
     
@@ -1203,12 +1974,22 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/JS语法专题/" >JS语法专题</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/nginx反向代理/" >nginx反向代理</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/JS语法专题/" >JS语法专题</a>
+            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/webpack之proxyTable设置跨域/" >webpack之proxyTable设置跨域</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/SPA-（单页应用程序）/" >SPA （单页应用程序）</a>
         </li>
     
     
@@ -1218,7 +1999,12 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/写插件教程/" >写插件教程</a>
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2018/09/24/函数式编程学习/" >函数式编程学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/写插件教程/" >插件</a>
         </li>
     
     
@@ -1228,7 +2014,7 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/JS基本语法/" >JS基本语法</a>
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/ES6学习笔记/" >ES6学习笔记</a>
         </li>
     
     
@@ -1238,7 +2024,7 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/ES6学习笔记/" >ES6学习笔记</a>
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/JS基本语法/" >JS基本语法</a>
         </li>
     
     
@@ -1253,12 +2039,12 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/19</span><a class="archive-post-title" href= "/2018/05/19/个页面的大型单页面应用/" >基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用</a>
+            <span class="archive-post-date">05/28</span><a class="archive-post-title" href= "/2018/05/28/重新学习Java​Script/" >重新学习Java​Script</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/18</span><a class="archive-post-title" href= "/2018/05/18/css3优惠券-邮票/" >css3优惠券/邮票</a>
+            <span class="archive-post-date">05/19</span><a class="archive-post-title" href= "/2018/05/19/个页面的大型单页面应用/" >基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用</a>
         </li>
     
     
@@ -1273,27 +2059,12 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/12</span><a class="archive-post-title" href= "/2018/05/12/css画三角形/" >css画三角形</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">05/11</span><a class="archive-post-title" href= "/2018/05/11/2018-05-11 CSS初始化/" >CSS初始化</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2018/05/10/2018-05-10 常见前端面试题/" >常见前端面试题</a>
         </li>
     
     
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2018/05/10/2018-05-10 随便做的一个个人简历/" >随便做的一个个人简历</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2018/05/10/2018-05-10 hexo的常用命令/" >hexo的常用命令</a>
         </li>
     
     
@@ -1312,11 +2083,6 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/18</span><a class="archive-post-title" href= "/2017/12/18/2017-12-18 pc端移动端跳转js/" >pc端移动端跳转js</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">12/01</span><a class="archive-post-title" href= "/2017/12/01/2017-12-01 javascript高级程序设计学习笔记/" >javascript高级程序设计学习笔记</a>
         </li>
     
@@ -1327,7 +2093,41 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2017/11/13/2017-11-13 Markdown学习/" >Markdown学习</a>
+            <span class="archive-post-date">05/13</span><a class="archive-post-title" href= "/2017/05/13/2017-11-13 Markdown学习/" >Markdown学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/12</span><a class="archive-post-title" href= "/2017/05/12/css画三角形/" >css画三角形</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2017/05/10/2018-05-10 hexo的常用命令/" >hexo的常用命令</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/01</span><a class="archive-post-title" href= "/2017/05/01/2018-05-11 CSS初始化/" >CSS初始化</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2016 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/18</span><a class="archive-post-title" href= "/2016/12/18/2017-12-18 pc端移动端跳转js/" >pc端移动端跳转js</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/18</span><a class="archive-post-title" href= "/2016/05/18/css3优惠券-邮票/" >css3优惠券/邮票</a>
         </li>
     
     </div>
@@ -1337,27 +2137,35 @@ js有哪些内置对象 Object 是 JavaScript 中所有对象的父对象
     
         <span class="sidebar-tag-name" data-tags="Markdown"><span class="iconfont-archer">&#xe606;</span>Markdown</span>
     
+        <span class="sidebar-tag-name" data-tags="js"><span class="iconfont-archer">&#xe606;</span>js</span>
+    
         <span class="sidebar-tag-name" data-tags="数组"><span class="iconfont-archer">&#xe606;</span>数组</span>
     
-        <span class="sidebar-tag-name" data-tags="js"><span class="iconfont-archer">&#xe606;</span>js</span>
+        <span class="sidebar-tag-name" data-tags="跳转"><span class="iconfont-archer">&#xe606;</span>跳转</span>
+    
+        <span class="sidebar-tag-name" data-tags="JS"><span class="iconfont-archer">&#xe606;</span>JS</span>
     
         <span class="sidebar-tag-name" data-tags="rem"><span class="iconfont-archer">&#xe606;</span>rem</span>
     
-        <span class="sidebar-tag-name" data-tags="跳转"><span class="iconfont-archer">&#xe606;</span>跳转</span>
+        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
     
         <span class="sidebar-tag-name" data-tags="简历"><span class="iconfont-archer">&#xe606;</span>简历</span>
     
         <span class="sidebar-tag-name" data-tags="面试"><span class="iconfont-archer">&#xe606;</span>面试</span>
     
-        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
+        <span class="sidebar-tag-name" data-tags="echarts"><span class="iconfont-archer">&#xe606;</span>echarts</span>
     
         <span class="sidebar-tag-name" data-tags="css"><span class="iconfont-archer">&#xe606;</span>css</span>
+    
+        <span class="sidebar-tag-name" data-tags="canvas"><span class="iconfont-archer">&#xe606;</span>canvas</span>
     
         <span class="sidebar-tag-name" data-tags="css3"><span class="iconfont-archer">&#xe606;</span>css3</span>
     
         <span class="sidebar-tag-name" data-tags="wepy"><span class="iconfont-archer">&#xe606;</span>wepy</span>
     
         <span class="sidebar-tag-name" data-tags="SQL"><span class="iconfont-archer">&#xe606;</span>SQL</span>
+    
+        <span class="sidebar-tag-name" data-tags="TS"><span class="iconfont-archer">&#xe606;</span>TS</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -1392,11 +2200,19 @@ jsonContent:
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
+        <span class="sidebar-category-name" data-categories="其它"><span class="iconfont-archer">&#xe60a;</span>其它</span>
+    
+        <span class="sidebar-category-name" data-categories="学习"><span class="iconfont-archer">&#xe60a;</span>学习</span>
+    
         <span class="sidebar-category-name" data-categories="前端学习"><span class="iconfont-archer">&#xe60a;</span>前端学习</span>
     
         <span class="sidebar-category-name" data-categories="代码片段"><span class="iconfont-archer">&#xe60a;</span>代码片段</span>
     
         <span class="sidebar-category-name" data-categories="笔记"><span class="iconfont-archer">&#xe60a;</span>笔记</span>
+    
+        <span class="sidebar-category-name" data-categories="面试"><span class="iconfont-archer">&#xe60a;</span>面试</span>
+    
+        <span class="sidebar-category-name" data-categories="工具"><span class="iconfont-archer">&#xe60a;</span>工具</span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>

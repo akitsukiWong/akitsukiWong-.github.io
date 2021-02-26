@@ -15,7 +15,7 @@
     <meta name="description" content="汪秋月的个人博客">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>js 面试题 · 小明崽的个人博客</title>
+    <title>前端面试题（js） · 小明崽的个人博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -207,7 +207,7 @@
                 <a href="/" >敲代码的🐷</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">js 面试题</a>
+                <a href="#" class="post-name">前端面试题（js）</a>
             </div>
     </div>
     
@@ -239,7 +239,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            js 面试题
+            前端面试题（js）
             <!-- 404 -->
             
         </h1>
@@ -383,45 +383,46 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h4 id="js的基本数据类型"><a href="#js的基本数据类型" class="headerlink" title="js的基本数据类型"></a>js的基本数据类型</h4><p>  Undefined、Null、Boolean、Number、String、<br>  ECMAScript 2015 新增:Symbol(创建后独一无二且不可变的数据类型 )</p>
+        <h4 id="js的基本数据类型"><a href="#js的基本数据类型" class="headerlink" title="js的基本数据类型"></a>js的基本数据类型</h4><p>  Undefined、 Null、 Boolean、 Number、 String、<br>  ECMAScript 2015 新增:Symbol(创建后独一无二且不可变的数据类型 )</p>
 <h4 id="js有哪些内置对象"><a href="#js有哪些内置对象" class="headerlink" title="js有哪些内置对象"></a>js有哪些内置对象</h4><p> Object 是 JavaScript 中所有对象的父对象</p>
-<p> 数据封装类对象：Object、Array、Boolean、Number 和 String<br> 其他对象：Function、Arguments、Math、Date、RegExp、Error</p>
-<h4 id="原型与原型链"><a href="#原型与原型链" class="headerlink" title="原型与原型链"></a>原型与原型链</h4><p><strong><strong>proto</strong>是每个对象都有的一个属性，而prototype是函数才会有的属性!!!</strong></p>
+<p> 数据封装类对象： Object、 Array、 Boolean、 Number 和 String<br> 其他对象： Function、 Arguments、 Math、 Date、 RegExp、 Error</p>
+<h4 id="原型与原型链"><a href="#原型与原型链" class="headerlink" title="原型与原型链"></a>原型与原型链</h4><p><strong><strong>proto</strong>是每个对象都有的一个属性， 而prototype是函数才会有的属性!!!</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Object.__proto__ === Function.prototype;</span><br><span class="line">Function.prototype.__proto__ === Object.prototype;</span><br><span class="line">Object.prototype.__proto__ === null;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>题目 1</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var A = function() &#123;&#125;;</span><br><span class="line">A.prototype.n = 1;</span><br><span class="line">var b = new A();</span><br><span class="line">A.prototype = &#123;</span><br><span class="line">  n: 2,</span><br><span class="line">  m: 3</span><br><span class="line">&#125;</span><br><span class="line">var c = new A();</span><br><span class="line"></span><br><span class="line">console.log(b.n);</span><br><span class="line">console.log(b.m);</span><br><span class="line"></span><br><span class="line">console.log(c.n);</span><br><span class="line">console.log(c.m);</span><br></pre></td></tr></table></figure>
-<p>请写出上面编程的输出结果是什么？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var A = function() &#123;&#125;;</span><br><span class="line">A.prototype.n = 1;</span><br><span class="line">var b = new A();</span><br><span class="line">A.prototype = &#123;</span><br><span class="line">    n: 2,</span><br><span class="line">    m: 3</span><br><span class="line">&#125;</span><br><span class="line">var c = new A();</span><br><span class="line"></span><br><span class="line">console.log(b.n);</span><br><span class="line">console.log(b.m);</span><br><span class="line"></span><br><span class="line">console.log(c.n);</span><br><span class="line">console.log(c.m);</span><br></pre></td></tr></table></figure>
+<p>请写出上面编程的输出结果是什么？ </p>
 <ul>
 <li>题目 2</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var F = function() &#123;&#125;;</span><br><span class="line"></span><br><span class="line">Object.prototype.a = function() &#123;</span><br><span class="line">  console.log(&apos;a&apos;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Function.prototype.b = function() &#123;</span><br><span class="line">  console.log(&apos;b&apos;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var f = new F();</span><br><span class="line"></span><br><span class="line">f.a();</span><br><span class="line">f.b();</span><br><span class="line"></span><br><span class="line">F.a();</span><br><span class="line">F.b();</span><br></pre></td></tr></table></figure>
-<p>请写出上面编程的输出结果是什么？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var F = function() &#123;&#125;;</span><br><span class="line"></span><br><span class="line">Object.prototype.a = function() &#123;</span><br><span class="line">    console.log(&apos;a&apos;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Function.prototype.b = function() &#123;</span><br><span class="line">    console.log(&apos;b&apos;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var f = new F();</span><br><span class="line"></span><br><span class="line">f.a();</span><br><span class="line">f.b();</span><br><span class="line"></span><br><span class="line">F.a();</span><br><span class="line">F.b();</span><br></pre></td></tr></table></figure>
+<p>请写出上面编程的输出结果是什么？ </p>
 <ul>
-<li>题目 3<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function Person(name) &#123;</span><br><span class="line">    this.name = name</span><br><span class="line">&#125;</span><br><span class="line">let p = new Person(&apos;Tom&apos;);</span><br></pre></td></tr></table></figure>
-</li>
+<li>题目 3</li>
 </ul>
-<p>问题1：1. p.<strong>proto</strong>等于什么？<br>问题2：Person.<strong>proto</strong>等于什么？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function Person(name) &#123;</span><br><span class="line">    this.name = name</span><br><span class="line">&#125;</span><br><span class="line">let p = new Person(&apos;Tom&apos;);</span><br></pre></td></tr></table></figure>
+<p>问题1： 1. p.<strong>proto</strong>等于什么？<br>问题2： Person.<strong>proto</strong>等于什么？ </p>
 <ul>
 <li>题目 4</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var foo = &#123;&#125;,</span><br><span class="line">    F = function()&#123;&#125;;</span><br><span class="line">Object.prototype.a = &apos;value a&apos;;</span><br><span class="line">Function.prototype.b = &apos;value b&apos;;</span><br><span class="line"></span><br><span class="line">console.log(foo.a);</span><br><span class="line">console.log(foo.b);</span><br><span class="line"></span><br><span class="line">console.log(F.a);</span><br><span class="line">console.log(F.b);</span><br></pre></td></tr></table></figure>
-<p>请写出上面编程的输出结果是什么？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var foo = &#123;&#125;,</span><br><span class="line">    F = function() &#123;&#125;;</span><br><span class="line">Object.prototype.a = &apos;value a&apos;;</span><br><span class="line">Function.prototype.b = &apos;value b&apos;;</span><br><span class="line"></span><br><span class="line">console.log(foo.a);</span><br><span class="line">console.log(foo.b);</span><br><span class="line"></span><br><span class="line">console.log(F.a);</span><br><span class="line">console.log(F.b);</span><br></pre></td></tr></table></figure>
+<p>请写出上面编程的输出结果是什么？ </p>
 <blockquote>
 <ul>
-<li><p>题目 1 答案：</p>
-<p> b.n -&gt; 1<br> b.m -&gt; undefined;<br> c.n -&gt; 2;<br> c.m -&gt; 3;</p>
-</li>
-<li><p>题目 2 答案：</p>
-<p> f.a() -&gt; a<br> f.b() -&gt; f.b is not a function<br> F.a() -&gt; a<br> F.b() -&gt; b</p>
-</li>
-<li><p>题目 3 答案<br> 答案1：Person.prototype<br> 答案2：Function.prototype</p>
-</li>
-<li>题目 4 答案<br> foo.a =&gt; value a<br> foo.b =&gt; undefined<br> F.a =&gt; value a<br> F.b =&gt; value b</li>
+<li>题目 1 答案：<br>b.n -&gt; 1<br>b.m -&gt; undefined;<br>c.n -&gt; 2;<br>c.m -&gt; 3; </li>
+<li>题目 2 答案：<br>f.a() -&gt; a<br>f.b() -&gt; f.b is not a function<br>F.a() -&gt; a<br>F.b() -&gt; b</li>
+<li>题目 3 答案<br>答案1： Person.prototype<br>答案2： Function.prototype</li>
+<li>题目 4 答案<br>foo.a =&gt; value a<br>foo.b =&gt; undefined<br>F.a =&gt; value a<br>F.b =&gt; value b</li>
 </ul>
 </blockquote>
-<h3 id="什么是深拷贝？什么是浅拷贝？"><a href="#什么是深拷贝？什么是浅拷贝？" class="headerlink" title="什么是深拷贝？什么是浅拷贝？"></a>什么是深拷贝？什么是浅拷贝？</h3><p>简单来说，有两个对象 A 和 B，B = A，当你修改 A 时，B 的值也跟着发生了变化，这时候就叫浅拷贝。如果不发生变化，就叫深拷贝。</p>
+<h3 id="什么是深拷贝？-什么是浅拷贝？"><a href="#什么是深拷贝？-什么是浅拷贝？" class="headerlink" title="什么是深拷贝？ 什么是浅拷贝？"></a>什么是深拷贝？ 什么是浅拷贝？</h3><p>简单来说， 有两个对象 A 和 B， B = A， 当你修改 A 时， B 的值也跟着发生了变化， 这时候就叫浅拷贝。 如果不发生变化， 就叫深拷贝。 </p>
+<h3 id="new的实现原理是什么？"><a href="#new的实现原理是什么？" class="headerlink" title="new的实现原理是什么？"></a>new的实现原理是什么？</h3><ul>
+<li>创建一个空对象，构造函数中的this指向这个空对象</li>
+<li>这个新对象被执行 [[原型]] 连接</li>
+<li>执行构造函数方法，属性和方法被添加到this引用的对象中</li>
+<li>如果构造函数中没有返回其它对象，那么返回this，即创建的这个的新对象，否则，返回构造函数中返回的对象。</li>
+</ul>
 
     </article>
     <!-- license  -->
@@ -431,16 +432,16 @@ height:50vh;
         <li class="next">
             
                 <div class="nextSlogan">Next Post</div>
-                <a href= "/2019/04/01/这四年前端自我总结/" title= 这四年前端的自我总结 >
-                    <div class="nextTitle">这四年前端的自我总结</div>
+                <a href= "/2019/05/17/面向对象/" title= 设计模式学习 >
+                    <div class="nextTitle">设计模式学习</div>
                 </a>
             
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2019/04/01/CSS面试题/" title= css 面试题 >
-                    <div class="prevTitle">css 面试题</div>
+                <a href= "/2019/04/01/CSS面试题/" title= 前端面试题（css） >
+                    <div class="prevTitle">前端面试题（css）</div>
                 </a>
             
         </li>
@@ -548,7 +549,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#js的基本数据类型"><span class="toc-number">1.</span> <span class="toc-text">js的基本数据类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#js有哪些内置对象"><span class="toc-number">2.</span> <span class="toc-text">js有哪些内置对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#原型与原型链"><span class="toc-number">3.</span> <span class="toc-text">原型与原型链</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是深拷贝？什么是浅拷贝？"><span class="toc-number"></span> <span class="toc-text">什么是深拷贝？什么是浅拷贝？</span></a>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#js的基本数据类型"><span class="toc-number">1.</span> <span class="toc-text">js的基本数据类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#js有哪些内置对象"><span class="toc-number">2.</span> <span class="toc-text">js有哪些内置对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#原型与原型链"><span class="toc-number">3.</span> <span class="toc-text">原型与原型链</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是深拷贝？-什么是浅拷贝？"><span class="toc-number"></span> <span class="toc-text">什么是深拷贝？ 什么是浅拷贝？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#new的实现原理是什么？"><span class="toc-number"></span> <span class="toc-text">new的实现原理是什么？</span></a>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -1101,49 +1102,709 @@ top:50vh;
     
     
     
-    <div class="total-archive"> Total : 38 </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 66 </div>
     
     <div class="post-archive">
     
     
     
     
+    <div class="archive-year"> 2021 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/05</span><a class="archive-post-title" href= "/2021/02/05/canvas/" >canvas</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/23</span><a class="archive-post-title" href= "/2020/11/23/PMP考试/" >PMP考试</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2020/09/04/Grid布局/" >Grid布局</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2020/09/04/Untitled/" >高阶组件 与 render props</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2020/09/04/ESLint/" >ESLint</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/27</span><a class="archive-post-title" href= "/2020/03/27/vscode常用插件/" >vscode常用插件</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/24</span><a class="archive-post-title" href= "/2020/03/24/Chrome浏览器查看代码利用率/" >Chrome浏览器查看代码利用率</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/20</span><a class="archive-post-title" href= "/2020/03/20/今天遇到的一个git错误/" >遇到了一个git错误，记录一下</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/13</span><a class="archive-post-title" href= "/2020/03/13/如何在谷歌上搜索/" >谷歌搜索小技巧</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/12</span><a class="archive-post-title" href= "/2020/03/12/webpack4-babel7构建React应用/" >webpack4+babel7构建React应用</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/11</span><a class="archive-post-title" href= "/2020/03/11/使用SonarScanner进行代码质量检查/" >使用SonarScanner进行代码质量检查</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/10</span><a class="archive-post-title" href= "/2020/03/10/每天一个设计模式——工厂模式/" >每天一个设计模式——工厂模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/10</span><a class="archive-post-title" href= "/2020/03/10/每天一个设计模式——单例模式/" >每天一个设计模式——单例模式</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/28</span><a class="archive-post-title" href= "/2019/04/28/尝试下hexo搬迁换电脑/" >尝试下hexo搬迁换电脑</a>
+            <span class="archive-post-date">11/18</span><a class="archive-post-title" href= "/2019/11/18/高阶组件（Higher-Order Components）/" >理解高阶组件</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/02</span><a class="archive-post-title" href= "/2019/04/02/同事去面试跟我说的面试题/" >同事去参加面试的面试题</a>
+            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2019/11/13/React-Hook/" >React Hook</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/CSS面试题/" >css 面试题</a>
+            <span class="archive-post-date">10/22</span><a class="archive-post-title" href= "/2019/10/22/Lottie/" >Lottie</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/卸磨杀驴/" >卸磨杀驴</a>
+            <span class="archive-post-date">10/15</span><a class="archive-post-title" href= "/2019/10/15/mobx/" >mobx</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/js-面试题/" >js 面试题</a>
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2019/09/26/tslint-json的配置项说明/" >tslint.json的配置项说明</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/HTML面试题/" >HTML面试题</a>
+            <span class="archive-post-date">09/19</span><a class="archive-post-title" href= "/2019/09/19/mac-生成文件tree/" >mac 生成树形目录图</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/这四年前端自我总结/" >这四年前端的自我总结</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/lodash学习/" >lodash学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/01</span><a class="archive-post-title" href= "/2019/09/01/重构个人网站/" >重构个人网站</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/TS分享准备/" >TS分享准备</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/15</span><a class="archive-post-title" href= "/2019/08/15/tsconfig-json/" >tsconfig.json配置项</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/14</span><a class="archive-post-title" href= "/2019/08/14/SSR/" >SSR(ShadowsocksX-NG-R)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/14</span><a class="archive-post-title" href= "/2019/08/14/node版本控制工具nvm/" >node版本控制工具nvm</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/08</span><a class="archive-post-title" href= "/2019/08/08/npm-scripts-使用指南/" >npm scripts 使用</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/05</span><a class="archive-post-title" href= "/2019/08/05/test/" >mac 终端主题配置</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/16</span><a class="archive-post-title" href= "/2019/07/16/前端面试总结/" >前端面试题(vue)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/27</span><a class="archive-post-title" href= "/2019/06/27/TypeScript学习/" >TypeScript学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/17</span><a class="archive-post-title" href= "/2019/05/17/面向对象/" >设计模式学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/CSS面试题/" >前端面试题（css）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/HTML面试题/" >前端面试题（html）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/js-面试题/" >前端面试题（js）</a>
         </li>
     
     
@@ -1167,22 +1828,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/25</span><a class="archive-post-title" href= "/2018/10/25/vue生命周期钩子/" >vue生命周期钩子</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">10/25</span><a class="archive-post-title" href= "/2018/10/25/SQL语句学习/" >SQL语句学习</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/SPA-（单页应用程序）/" >SPA （单页应用程序）</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/webpack之proxyTable设置跨域/" >webpack之proxyTable设置跨域</a>
+            <span class="archive-post-date">10/02</span><a class="archive-post-title" href= "/2018/10/02/vue生命周期钩子/" >vue生命周期钩子</a>
         </li>
     
     
@@ -1192,12 +1843,22 @@ top:50vh;
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/JS语法专题/" >JS语法专题</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/nginx反向代理/" >nginx反向代理</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/JS语法专题/" >JS语法专题</a>
+            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/webpack之proxyTable设置跨域/" >webpack之proxyTable设置跨域</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/SPA-（单页应用程序）/" >SPA （单页应用程序）</a>
         </li>
     
     
@@ -1207,7 +1868,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/写插件教程/" >写插件教程</a>
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2018/09/24/函数式编程学习/" >函数式编程学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/写插件教程/" >插件</a>
         </li>
     
     
@@ -1217,7 +1883,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/JS基本语法/" >JS基本语法</a>
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/ES6学习笔记/" >ES6学习笔记</a>
         </li>
     
     
@@ -1227,7 +1893,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/ES6学习笔记/" >ES6学习笔记</a>
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/JS基本语法/" >JS基本语法</a>
         </li>
     
     
@@ -1242,12 +1908,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/19</span><a class="archive-post-title" href= "/2018/05/19/个页面的大型单页面应用/" >基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用</a>
+            <span class="archive-post-date">05/28</span><a class="archive-post-title" href= "/2018/05/28/重新学习Java​Script/" >重新学习Java​Script</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/18</span><a class="archive-post-title" href= "/2018/05/18/css3优惠券-邮票/" >css3优惠券/邮票</a>
+            <span class="archive-post-date">05/19</span><a class="archive-post-title" href= "/2018/05/19/个页面的大型单页面应用/" >基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用</a>
         </li>
     
     
@@ -1262,27 +1928,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/12</span><a class="archive-post-title" href= "/2018/05/12/css画三角形/" >css画三角形</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">05/11</span><a class="archive-post-title" href= "/2018/05/11/2018-05-11 CSS初始化/" >CSS初始化</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2018/05/10/2018-05-10 常见前端面试题/" >常见前端面试题</a>
         </li>
     
     
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2018/05/10/2018-05-10 随便做的一个个人简历/" >随便做的一个个人简历</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2018/05/10/2018-05-10 hexo的常用命令/" >hexo的常用命令</a>
         </li>
     
     
@@ -1301,11 +1952,6 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/18</span><a class="archive-post-title" href= "/2017/12/18/2017-12-18 pc端移动端跳转js/" >pc端移动端跳转js</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">12/01</span><a class="archive-post-title" href= "/2017/12/01/2017-12-01 javascript高级程序设计学习笔记/" >javascript高级程序设计学习笔记</a>
         </li>
     
@@ -1316,7 +1962,41 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2017/11/13/2017-11-13 Markdown学习/" >Markdown学习</a>
+            <span class="archive-post-date">05/13</span><a class="archive-post-title" href= "/2017/05/13/2017-11-13 Markdown学习/" >Markdown学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/12</span><a class="archive-post-title" href= "/2017/05/12/css画三角形/" >css画三角形</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2017/05/10/2018-05-10 hexo的常用命令/" >hexo的常用命令</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/01</span><a class="archive-post-title" href= "/2017/05/01/2018-05-11 CSS初始化/" >CSS初始化</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2016 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/18</span><a class="archive-post-title" href= "/2016/12/18/2017-12-18 pc端移动端跳转js/" >pc端移动端跳转js</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/18</span><a class="archive-post-title" href= "/2016/05/18/css3优惠券-邮票/" >css3优惠券/邮票</a>
         </li>
     
     </div>
@@ -1326,27 +2006,35 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="Markdown"><span class="iconfont-archer">&#xe606;</span>Markdown</span>
     
+        <span class="sidebar-tag-name" data-tags="js"><span class="iconfont-archer">&#xe606;</span>js</span>
+    
         <span class="sidebar-tag-name" data-tags="数组"><span class="iconfont-archer">&#xe606;</span>数组</span>
     
-        <span class="sidebar-tag-name" data-tags="js"><span class="iconfont-archer">&#xe606;</span>js</span>
+        <span class="sidebar-tag-name" data-tags="跳转"><span class="iconfont-archer">&#xe606;</span>跳转</span>
+    
+        <span class="sidebar-tag-name" data-tags="JS"><span class="iconfont-archer">&#xe606;</span>JS</span>
     
         <span class="sidebar-tag-name" data-tags="rem"><span class="iconfont-archer">&#xe606;</span>rem</span>
     
-        <span class="sidebar-tag-name" data-tags="跳转"><span class="iconfont-archer">&#xe606;</span>跳转</span>
+        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
     
         <span class="sidebar-tag-name" data-tags="简历"><span class="iconfont-archer">&#xe606;</span>简历</span>
     
         <span class="sidebar-tag-name" data-tags="面试"><span class="iconfont-archer">&#xe606;</span>面试</span>
     
-        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
+        <span class="sidebar-tag-name" data-tags="echarts"><span class="iconfont-archer">&#xe606;</span>echarts</span>
     
         <span class="sidebar-tag-name" data-tags="css"><span class="iconfont-archer">&#xe606;</span>css</span>
+    
+        <span class="sidebar-tag-name" data-tags="canvas"><span class="iconfont-archer">&#xe606;</span>canvas</span>
     
         <span class="sidebar-tag-name" data-tags="css3"><span class="iconfont-archer">&#xe606;</span>css3</span>
     
         <span class="sidebar-tag-name" data-tags="wepy"><span class="iconfont-archer">&#xe606;</span>wepy</span>
     
         <span class="sidebar-tag-name" data-tags="SQL"><span class="iconfont-archer">&#xe606;</span>SQL</span>
+    
+        <span class="sidebar-tag-name" data-tags="TS"><span class="iconfont-archer">&#xe606;</span>TS</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -1381,11 +2069,19 @@ jsonContent:
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
+        <span class="sidebar-category-name" data-categories="其它"><span class="iconfont-archer">&#xe60a;</span>其它</span>
+    
+        <span class="sidebar-category-name" data-categories="学习"><span class="iconfont-archer">&#xe60a;</span>学习</span>
+    
         <span class="sidebar-category-name" data-categories="前端学习"><span class="iconfont-archer">&#xe60a;</span>前端学习</span>
     
         <span class="sidebar-category-name" data-categories="代码片段"><span class="iconfont-archer">&#xe60a;</span>代码片段</span>
     
         <span class="sidebar-category-name" data-categories="笔记"><span class="iconfont-archer">&#xe60a;</span>笔记</span>
+    
+        <span class="sidebar-category-name" data-categories="面试"><span class="iconfont-archer">&#xe60a;</span>面试</span>
+    
+        <span class="sidebar-category-name" data-categories="工具"><span class="iconfont-archer">&#xe60a;</span>工具</span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>

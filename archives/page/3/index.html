@@ -336,101 +336,20 @@
     
     
         <article class="index-post">
-            <a class="abstract-title" href = "/2018/09/07/JS基本语法/" >
+            <a class="abstract-title" href = "/2019/09/01/重构个人网站/" >
                 
-                    <span>JS基本语法</span>
+                    <span>重构个人网站</span>
             </a>
             <div class="abstract-content">
-                JS基本语法什么是 JavaScript 语言JavaScript 是一种轻量级的脚本语言。所谓“脚本语言”（script language），指的是它不具备开发操作系统的能力，而是只用来编写控制其他大型应用程序（比如浏览器）的“脚本”。
-1. 语句JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句。
-语句（statement）是为了完成某种任务而进行的操作，比如下面就是一行赋值语句。
-1var a = 1 + 3;
-这条语句先用var命令，声明了变量a，然后将1 + 3的运算结果赋值给变量a。
-1 + 3叫做表达式（express...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/09/07</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/09/07/学习jquery源码/" >
-                
-                    <span>学习jquery源码</span>
-            </a>
-            <div class="abstract-content">
-                学习jQuery源码笔记1. 立即执行函数IIFE (立即调用的函数表达,Immediately-Invoked Function Expression，简称IIFE)
-123(function() &#123;    /*code*/&#125;)()
-或者123(function() &#123;    /*code*/&#125;())
-IIFE的作用
-不必为函数命名，避免了污染全局变量我们这里直接对匿名函数使用这种“立即执行的函数表达式”，并且在函数的在括号内定义之后立刻调用执行，这样避免为函数命名，减少命名的冲突
-
-IIFE内部形成了一个单独的作用域，可以封装一些外部无法读取的...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/09/07</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/07/13/mac-下svn的使用/" >
-                
-                    <span>mac 下svn的使用</span>
-            </a>
-            <div class="abstract-content">
-                原来mac自带了svn，还挺好用的
-以下是一些常用命令：
-1、将文件checkout到本地目录
-1 svn checkout path（path是服务器上的目录）2 例如：svn checkout svn://192.168.1.1/pro/domain3 简写：svn co
-2、往版本库中添加新的文件
-1 svn add file2 例如：svn add test.php(添加test.php)3 svn add *.php(添加当前目录下所有的php文件)
-3、将改动的文件提交到版本库
-1 svn commit -m “LogMessage“ [-N] [–no-unlock] PA...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/07/13</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/07/12/试一下Hexo-Admin好不好用～/" >
-                
-                    <span>试一下Hexo Admin好不好用～</span>
-            </a>
-            <div class="abstract-content">
-                觉得原始的发blog太麻烦，所以装了个hexo admin 
-现在来尝试下发下博客
-1
-2
-3
-发送！
+                之前写的个人网站是 vue + express + mysql，后端使用iview-admin
+准备重构成 react + typescript + nestjs + mysql，后端基于antd-admin
+编辑器使用markdown编辑器：for-editor
 
             </div>
             <div class="abstract-post-meta">
                 <!-- date  -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/07/12</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/01</span>
                 </div>
                 <!-- tags  -->
                 
@@ -440,19 +359,30 @@ IIFE内部形成了一个单独的作用域，可以封装一些外部无法读�
     
     
         <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/19/个页面的大型单页面应用/" >
+            <a class="abstract-title" href = "/2019/08/21/TS分享准备/" >
                 
-                    <span>基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用</span>
+                    <span>TS分享准备</span>
             </a>
             <div class="abstract-content">
-                https://www.vue-js.com/topic/58abbd21a9c1282817afc28d
-github:https://github.com/bailicangdu/vue2-elm
+                为什么要使用typeScript1. IDE代码提示，类型推论，自动补全，提高敲代码的效率
 
+typeScript极大优化了编辑器的友好度，代码的提示功能会在您输入字符的同时自动在光标的相应位置弹出。
+其提示列表是基于一定的顺序排列，并非按照字母顺序排列，十分好用。
+当代码中没有明确的指定类型时，ts会依照类型推论的规则自动推断出类型。
+使用ts之后你就会发现磨刀不误砍柴工，你为类型正确花费的时间是值得的
+
+2. 增加代码可读性
+
+类型是最好的注释
+
+3. 采用TypeScript进行改造可以移除Babel全家桶，减小包体积，同时增加强类型约束从而避免今后开发时可能的问题
+
+ts自带了语...
             </div>
             <div class="abstract-post-meta">
                 <!-- date  -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/19</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/21</span>
                 </div>
                 <!-- tags  -->
                 
@@ -462,25 +392,186 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
         <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/18/css3优惠券-邮票/" >
+            <a class="abstract-title" href = "/2019/08/15/tsconfig-json/" >
                 
-                    <span>css3优惠券/邮票</span>
+                    <span>tsconfig.json配置项</span>
             </a>
             <div class="abstract-content">
-                css3写的优惠券/邮票
-码云地址：http://dflxm.gitee.io/code/%E9%82%AE%E7%A5%A8.html
+                编译选项1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&#123;  &quot;compilerOptions&quot;: &#123;    /* 基本选项 */    &quot;target&quot;: &quot;es5&quot;,                       // 指定 ECMAScript 目标版本: &apos;ES3&apos; (default), &apos;ES5&apos;, &apos;ES2...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/15</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/08/14/SSR/" >
+                
+                    <span>SSR(ShadowsocksX-NG-R)</span>
+            </a>
+            <div class="abstract-content">
+                下载 
+服务购买
 
             </div>
             <div class="abstract-post-meta">
                 <!-- date  -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/18</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/14</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/08/14/node版本控制工具nvm/" >
+                
+                    <span>node版本控制工具nvm</span>
+            </a>
+            <div class="abstract-content">
+                安装 nvm
+安装
+
+1curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+
+验证nvm安装完成
+
+1command -v nvm
+如果安装完成，就会显示如下
+1nvm
+查看 nvm 可以安装的 node 版本
+查看可以安装的版本
+
+1nvm ls-remote
+
+查看所有可以安装的LTS版本（长期支持版）
+
+1nvm ls-remote --lts
+安装指定版本的 node官方推荐的安装方式 nvm install &lt;版本号&gt;
+1$ nvm install v...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/14</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/08/08/npm-scripts-使用指南/" >
+                
+                    <span>npm scripts 使用</span>
+            </a>
+            <div class="abstract-content">
+                npm 脚本的原理非常简单。每当执行npm run，就会自动新建一个 Shell，在这个 Shell 里面执行指定的脚本命令。因此，只要是 Shell（一般是 Bash）可以运行的命令，就可以写在 npm 脚本里面。
+由于 npm 脚本的唯一要求就是可以在 Shell 执行，因此它不一定是 Node 脚本，任何可执行文件都可以写在里面。
+npm 脚本的退出码，也遵守 Shell 脚本规则。如果退出码不是0，npm 就认为这个脚本执行失败。
+通配符由于 npm 脚本就是 Shell 脚本，因为可以使用 Shell 通配符。
+12&quot;lint&quot;: &quot;jshint ...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/08</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/08/05/test/" >
+                
+                    <span>mac 终端主题配置</span>
+            </a>
+            <div class="abstract-content">
+                shell的偏好设置mac自带zsh，所以直接修改偏好设置
+
+安装 Oh-My-Zsh：1sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+就这俩步，其它花里胡哨的不需要了，一个终端而已，字体弄大点，看得清就行了
+
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/05</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/07/16/前端面试总结/" >
+                
+                    <span>前端面试题(vue)</span>
+            </a>
+            <div class="abstract-content">
+                对MVVM的理解MVVM分为Model、View、ViewModel
+Model 代表数据模型，数据和业务逻辑都在Model层中定义
+View 代表UI视图，负责数据的展示
+ViewModel 负责监听 Model 中数据的改变并且控制视图的更新，处理用户交互操作
+Model 和 View 并无直接关联，而是通过 ViewModel 来进行联系的，Model 和 ViewModel 之间有着双向数据绑定的联系。因此当 Model 中的数据改变时会触发 View 层的刷新，View 中由于用户交互操作而改变的数据也会在 Model 中同步。这种模式实现了 Model 和 View 的数据自...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/16</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="abstract-title" href = "/2019/06/27/TypeScript学习/" >
+                
+                    <span>TypeScript学习</span>
+            </a>
+            <div class="abstract-content">
+                TypeScript 基础知识什么是 TypeScript
+JavaScript的超集，又叫类型化的JavaScript，最终编译成JavaScript。微软出品。
+
+官网：https://www.tslang.cn
+特点
+始于JavaScript，归于JavaScript
+可以编译出纯净、 简洁的JavaScript代码，并且可以运行在任何浏览器上、Node.js环境中和任何支持ECMAScript 3（或更高版本）的JavaScript引擎中。
+
+
+强大的工具构建 大型应用程序
+类型允许JavaScript开发者在开发JavaScript应用程序时使用高效的开发工具和常用操作比如静态...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/06/27</span>
                 </div>
                 <!-- tags  -->
                 
                 <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css3">css3</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "TS">TS</a>
     
 </div>
                 
@@ -490,123 +581,44 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
         <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/12/css3做banner/" >
+            <a class="abstract-title" href = "/2019/05/17/面向对象/" >
                 
-                    <span>css3做banner</span>
+                    <span>设计模式学习</span>
             </a>
             <div class="abstract-content">
-                也是面试时候遇到的问题,回来随便弄了一个
-在线地址：http://dflxm.oschina.io/code/
-代码
-1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859&lt;!DOCTYPE html&gt;&lt;html&gt;	&lt;head&gt;		&lt;meta charset=&quot;utf-8&quot; /&gt;		&lt;title&gt;css3写一个banner&lt;/title&gt...
+                面向对象三要素：
+
+继承（子类继承父类）
+  继承可以将公共方法抽离出来，提高复用，减少冗余
+
+封装（数据多权限和保密）
+
+public 完全开放
+
+protected 对子类开放
+
+private 对自己开放
+
+
+减少耦合，不该外漏的不外漏
+利于数据，接口的权限管理
+
+多态（同一接口的不同实现）
+  同一个接口，不同的表现
+  保持子类的开放性和灵活性
+  面向接口编程
+
+
+super关键字
+12345super([arguments]); // 调用 父对象/父类 的构造函数super.functionOnParent([arguments]); // 调用 父对象/父类 上的方法
+...
             </div>
             <div class="abstract-post-meta">
                 <!-- date  -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/12</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/05/17</span>
                 </div>
                 <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css">css</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/12/css画三角形/" >
-                
-                    <span>css画三角形</span>
-            </a>
-            <div class="abstract-content">
-                面试时候遇到的问题，只要设置两个边框透明就行了,学会了这个，妈妈再也不怕我面试的时候被要求画三角形了
-
-
-
-上三角
-1234567#triangle-up &#123;width: 0;height: 0;border-left: 50px solid transparent;border-right: 50px solid transparent;border-bottom: 100px solid red;&#125;
-
-
-下三角
-1234567#triangle-down &#123;width: 0;height: 0;border-left: 50px solid transp...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/12</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css">css</a>
-    
-</div>
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/12/2018-05-12 ECharts学习/" >
-                
-                    <span>ECharts学习</span>
-            </a>
-            <div class="abstract-content">
-                面试了很多家单位，都问到了ECharts，所以准备一下还是很有必要的
-
-2018-5-27 更新：
-新单位也用到了ECharts，画了几个，也不难，官方文档也很全
-主要就这几个步骤
-
-引用js
-准备放图表的容器
-初始化图表，设置参数
-
-有其它个性化要求，根据官方的文档，改一改配置项都可以快速解决
-
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/12</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/11/2018-05-11 CSS初始化/" >
-                
-                    <span>CSS初始化</span>
-            </a>
-            <div class="abstract-content">
-                
-为什么初始化css?考虑到浏览器兼容性问题，不同浏览器对标签的默认值是不同的
-
-通用初始化样式1234567891011121314151617181920212223242526272829303132333435body&#123; margin: 0;padding: 0;font-family: &quot;微软雅黑&quot;;overflow: hidden;&#125;body,html&#123;-webkit-text-size-adjust: none;width: 100%;height: 100%;&#125;*&#123;text-decoration: no...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/11</span>
-                </div>
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css">css</a>
-    
-</div>
                 
             </div>
         </article>
@@ -614,7 +626,7 @@ github:https://github.com/bailicangdu/vue2-elm
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/page/2/">&#60; PREV</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/archives/page/4/">4</a><a class="extend next" rel="next" href="/archives/page/4/">NEXT &#62;</a>
+        <a class="extend prev" rel="prev" href="/archives/page/2/">&#60; PREV</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/archives/page/4/">4</a><a class="page-number" href="/archives/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/7/">7</a><a class="extend next" rel="next" href="/archives/page/4/">NEXT &#62;</a>
     </nav>
     
 </main>
@@ -1242,49 +1254,709 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
     
-    <div class="total-archive"> Total : 38 </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 66 </div>
     
     <div class="post-archive">
     
     
     
     
+    <div class="archive-year"> 2021 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/05</span><a class="archive-post-title" href= "/2021/02/05/canvas/" >canvas</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/23</span><a class="archive-post-title" href= "/2020/11/23/PMP考试/" >PMP考试</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2020/09/04/Grid布局/" >Grid布局</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2020/09/04/Untitled/" >高阶组件 与 render props</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2020/09/04/ESLint/" >ESLint</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/27</span><a class="archive-post-title" href= "/2020/03/27/vscode常用插件/" >vscode常用插件</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/24</span><a class="archive-post-title" href= "/2020/03/24/Chrome浏览器查看代码利用率/" >Chrome浏览器查看代码利用率</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/20</span><a class="archive-post-title" href= "/2020/03/20/今天遇到的一个git错误/" >遇到了一个git错误，记录一下</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/13</span><a class="archive-post-title" href= "/2020/03/13/如何在谷歌上搜索/" >谷歌搜索小技巧</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/12</span><a class="archive-post-title" href= "/2020/03/12/webpack4-babel7构建React应用/" >webpack4+babel7构建React应用</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/11</span><a class="archive-post-title" href= "/2020/03/11/使用SonarScanner进行代码质量检查/" >使用SonarScanner进行代码质量检查</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/10</span><a class="archive-post-title" href= "/2020/03/10/每天一个设计模式——工厂模式/" >每天一个设计模式——工厂模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/10</span><a class="archive-post-title" href= "/2020/03/10/每天一个设计模式——单例模式/" >每天一个设计模式——单例模式</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/28</span><a class="archive-post-title" href= "/2019/04/28/尝试下hexo搬迁换电脑/" >尝试下hexo搬迁换电脑</a>
+            <span class="archive-post-date">11/18</span><a class="archive-post-title" href= "/2019/11/18/高阶组件（Higher-Order Components）/" >理解高阶组件</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/02</span><a class="archive-post-title" href= "/2019/04/02/同事去面试跟我说的面试题/" >同事去参加面试的面试题</a>
+            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2019/11/13/React-Hook/" >React Hook</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/CSS面试题/" >css 面试题</a>
+            <span class="archive-post-date">10/22</span><a class="archive-post-title" href= "/2019/10/22/Lottie/" >Lottie</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/卸磨杀驴/" >卸磨杀驴</a>
+            <span class="archive-post-date">10/15</span><a class="archive-post-title" href= "/2019/10/15/mobx/" >mobx</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/js-面试题/" >js 面试题</a>
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2019/09/26/tslint-json的配置项说明/" >tslint.json的配置项说明</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/HTML面试题/" >HTML面试题</a>
+            <span class="archive-post-date">09/19</span><a class="archive-post-title" href= "/2019/09/19/mac-生成文件tree/" >mac 生成树形目录图</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/这四年前端自我总结/" >这四年前端的自我总结</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/lodash学习/" >lodash学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/01</span><a class="archive-post-title" href= "/2019/09/01/重构个人网站/" >重构个人网站</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/TS分享准备/" >TS分享准备</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/15</span><a class="archive-post-title" href= "/2019/08/15/tsconfig-json/" >tsconfig.json配置项</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/14</span><a class="archive-post-title" href= "/2019/08/14/SSR/" >SSR(ShadowsocksX-NG-R)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/14</span><a class="archive-post-title" href= "/2019/08/14/node版本控制工具nvm/" >node版本控制工具nvm</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/08</span><a class="archive-post-title" href= "/2019/08/08/npm-scripts-使用指南/" >npm scripts 使用</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/05</span><a class="archive-post-title" href= "/2019/08/05/test/" >mac 终端主题配置</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/16</span><a class="archive-post-title" href= "/2019/07/16/前端面试总结/" >前端面试题(vue)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/27</span><a class="archive-post-title" href= "/2019/06/27/TypeScript学习/" >TypeScript学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/17</span><a class="archive-post-title" href= "/2019/05/17/面向对象/" >设计模式学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/CSS面试题/" >前端面试题（css）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/HTML面试题/" >前端面试题（html）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/01</span><a class="archive-post-title" href= "/2019/04/01/js-面试题/" >前端面试题（js）</a>
         </li>
     
     
@@ -1308,22 +1980,12 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/25</span><a class="archive-post-title" href= "/2018/10/25/vue生命周期钩子/" >vue生命周期钩子</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">10/25</span><a class="archive-post-title" href= "/2018/10/25/SQL语句学习/" >SQL语句学习</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/SPA-（单页应用程序）/" >SPA （单页应用程序）</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/webpack之proxyTable设置跨域/" >webpack之proxyTable设置跨域</a>
+            <span class="archive-post-date">10/02</span><a class="archive-post-title" href= "/2018/10/02/vue生命周期钩子/" >vue生命周期钩子</a>
         </li>
     
     
@@ -1333,12 +1995,22 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/JS语法专题/" >JS语法专题</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/nginx反向代理/" >nginx反向代理</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/JS语法专题/" >JS语法专题</a>
+            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/webpack之proxyTable设置跨域/" >webpack之proxyTable设置跨域</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/29</span><a class="archive-post-title" href= "/2018/09/29/SPA-（单页应用程序）/" >SPA （单页应用程序）</a>
         </li>
     
     
@@ -1348,7 +2020,12 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/写插件教程/" >写插件教程</a>
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2018/09/24/函数式编程学习/" >函数式编程学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/写插件教程/" >插件</a>
         </li>
     
     
@@ -1358,7 +2035,7 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/JS基本语法/" >JS基本语法</a>
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/ES6学习笔记/" >ES6学习笔记</a>
         </li>
     
     
@@ -1368,7 +2045,7 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/ES6学习笔记/" >ES6学习笔记</a>
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2018/09/07/JS基本语法/" >JS基本语法</a>
         </li>
     
     
@@ -1383,12 +2060,12 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/19</span><a class="archive-post-title" href= "/2018/05/19/个页面的大型单页面应用/" >基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用</a>
+            <span class="archive-post-date">05/28</span><a class="archive-post-title" href= "/2018/05/28/重新学习Java​Script/" >重新学习Java​Script</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/18</span><a class="archive-post-title" href= "/2018/05/18/css3优惠券-邮票/" >css3优惠券/邮票</a>
+            <span class="archive-post-date">05/19</span><a class="archive-post-title" href= "/2018/05/19/个页面的大型单页面应用/" >基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用</a>
         </li>
     
     
@@ -1403,27 +2080,12 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/12</span><a class="archive-post-title" href= "/2018/05/12/css画三角形/" >css画三角形</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">05/11</span><a class="archive-post-title" href= "/2018/05/11/2018-05-11 CSS初始化/" >CSS初始化</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2018/05/10/2018-05-10 常见前端面试题/" >常见前端面试题</a>
         </li>
     
     
         <li class="archive-post-item">
             <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2018/05/10/2018-05-10 随便做的一个个人简历/" >随便做的一个个人简历</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2018/05/10/2018-05-10 hexo的常用命令/" >hexo的常用命令</a>
         </li>
     
     
@@ -1442,11 +2104,6 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/18</span><a class="archive-post-title" href= "/2017/12/18/2017-12-18 pc端移动端跳转js/" >pc端移动端跳转js</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">12/01</span><a class="archive-post-title" href= "/2017/12/01/2017-12-01 javascript高级程序设计学习笔记/" >javascript高级程序设计学习笔记</a>
         </li>
     
@@ -1457,7 +2114,41 @@ github:https://github.com/bailicangdu/vue2-elm
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2017/11/13/2017-11-13 Markdown学习/" >Markdown学习</a>
+            <span class="archive-post-date">05/13</span><a class="archive-post-title" href= "/2017/05/13/2017-11-13 Markdown学习/" >Markdown学习</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/12</span><a class="archive-post-title" href= "/2017/05/12/css画三角形/" >css画三角形</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/10</span><a class="archive-post-title" href= "/2017/05/10/2018-05-10 hexo的常用命令/" >hexo的常用命令</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/01</span><a class="archive-post-title" href= "/2017/05/01/2018-05-11 CSS初始化/" >CSS初始化</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2016 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/18</span><a class="archive-post-title" href= "/2016/12/18/2017-12-18 pc端移动端跳转js/" >pc端移动端跳转js</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/18</span><a class="archive-post-title" href= "/2016/05/18/css3优惠券-邮票/" >css3优惠券/邮票</a>
         </li>
     
     </div>
@@ -1467,27 +2158,35 @@ github:https://github.com/bailicangdu/vue2-elm
     
         <span class="sidebar-tag-name" data-tags="Markdown"><span class="iconfont-archer">&#xe606;</span>Markdown</span>
     
+        <span class="sidebar-tag-name" data-tags="js"><span class="iconfont-archer">&#xe606;</span>js</span>
+    
         <span class="sidebar-tag-name" data-tags="数组"><span class="iconfont-archer">&#xe606;</span>数组</span>
     
-        <span class="sidebar-tag-name" data-tags="js"><span class="iconfont-archer">&#xe606;</span>js</span>
+        <span class="sidebar-tag-name" data-tags="跳转"><span class="iconfont-archer">&#xe606;</span>跳转</span>
+    
+        <span class="sidebar-tag-name" data-tags="JS"><span class="iconfont-archer">&#xe606;</span>JS</span>
     
         <span class="sidebar-tag-name" data-tags="rem"><span class="iconfont-archer">&#xe606;</span>rem</span>
     
-        <span class="sidebar-tag-name" data-tags="跳转"><span class="iconfont-archer">&#xe606;</span>跳转</span>
+        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
     
         <span class="sidebar-tag-name" data-tags="简历"><span class="iconfont-archer">&#xe606;</span>简历</span>
     
         <span class="sidebar-tag-name" data-tags="面试"><span class="iconfont-archer">&#xe606;</span>面试</span>
     
-        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
+        <span class="sidebar-tag-name" data-tags="echarts"><span class="iconfont-archer">&#xe606;</span>echarts</span>
     
         <span class="sidebar-tag-name" data-tags="css"><span class="iconfont-archer">&#xe606;</span>css</span>
+    
+        <span class="sidebar-tag-name" data-tags="canvas"><span class="iconfont-archer">&#xe606;</span>canvas</span>
     
         <span class="sidebar-tag-name" data-tags="css3"><span class="iconfont-archer">&#xe606;</span>css3</span>
     
         <span class="sidebar-tag-name" data-tags="wepy"><span class="iconfont-archer">&#xe606;</span>wepy</span>
     
         <span class="sidebar-tag-name" data-tags="SQL"><span class="iconfont-archer">&#xe606;</span>SQL</span>
+    
+        <span class="sidebar-tag-name" data-tags="TS"><span class="iconfont-archer">&#xe606;</span>TS</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -1522,11 +2221,19 @@ jsonContent:
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
+        <span class="sidebar-category-name" data-categories="其它"><span class="iconfont-archer">&#xe60a;</span>其它</span>
+    
+        <span class="sidebar-category-name" data-categories="学习"><span class="iconfont-archer">&#xe60a;</span>学习</span>
+    
         <span class="sidebar-category-name" data-categories="前端学习"><span class="iconfont-archer">&#xe60a;</span>前端学习</span>
     
         <span class="sidebar-category-name" data-categories="代码片段"><span class="iconfont-archer">&#xe60a;</span>代码片段</span>
     
         <span class="sidebar-category-name" data-categories="笔记"><span class="iconfont-archer">&#xe60a;</span>笔记</span>
+    
+        <span class="sidebar-category-name" data-categories="面试"><span class="iconfont-archer">&#xe60a;</span>面试</span>
+    
+        <span class="sidebar-category-name" data-categories="工具"><span class="iconfont-archer">&#xe60a;</span>工具</span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
