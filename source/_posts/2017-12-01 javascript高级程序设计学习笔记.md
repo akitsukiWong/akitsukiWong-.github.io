@@ -1,8 +1,11 @@
----
 title: javascript高级程序设计学习笔记
-date: 2017-12-01 01:45:22
-tags: js
-categories: 前端学习
+tags:
+  - JS
+  - ''
+categories:
+  - 笔记
+  - ''
+date: 2017-12-01 01:45:00
 ---
 
 

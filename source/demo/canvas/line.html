@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+
+    <script type="text/javascript">
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+    </script>
+
+    <figure class="highlight plain">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="gutter">
+                        <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre>
+                    </td>
+                    <td class="code">
+                        <pre><span class="line">&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type="text/javascript"&gt;</span><br><span class="line">    var c = document.getElementById("myCanvas");</span><br><span class="line">    var ctx = c.getContext("2d");</span><br><span class="line">    ctx.fillRect(10, 10, 50, 50);   //绘制被填充的矩形，默认填充颜色是黑色</span><br><span class="line">&lt;/script&gt;</span><br></pre>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+
+</body>
+
+</html>

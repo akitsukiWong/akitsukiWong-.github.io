@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+
+
+    <script type="text/javascript">
+        var canvas = document.getElementById("myCanvas");	//根据 id 找到 canvas 元素
+        var cxt = canvas.getContext("2d");	//getContext() 方法返回一个用于在画布上绘图的环境
+        cxt.fillStyle = "#FF0000";  //填充颜色 不填充颜色默认为黑色
+        cxt.fillRect(0, 0, 100, 50);    //规定了形状，位置，尺寸
+    </script>
+
+
+    <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type="text/javascript"&gt;</span><br><span class="line">    var canvas = document.getElementById("myCanvas");	//根据 id 找到 canvas 元素</span><br><span class="line">    var cxt = canvas.getContext("2d");	//getContext() 方法返回一个用于在画布上绘图的环境</span><br><span class="line">    cxt.fillStyle = "#FF0000";  //填充颜色</span><br><span class="line">    cxt.fillRect(0, 0, 100, 50);    //规定了形状，位置，尺寸</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></tbody></table></figure>
+</body>
+
+</html>

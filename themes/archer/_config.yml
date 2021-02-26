@@ -1,0 +1,97 @@
+# ========== Profile ========== #
+# avatar
+avatar: /avatar/dflxm.jpeg
+# author name
+author: 小明崽
+# signature
+signature: 联系我
+# SNS
+social:
+  email: 335098623@qq.com
+  github: //github.com/akitsukiWong
+  # wechat and qq should be a path of qr-code image
+  wechat: /assets/wx.png
+  qq: 
+  weibo: 
+  zhihu: 
+  douban: 
+  facebook: 
+  twitter: 
+  instagram: 
+  stack-overflow: 
+  v2ex: 
+  bilibili: 
+  linkedin: 
+  others: 
+  rss: 
+
+# friends
+friends:
+  我的简历: //dflxm.oschina.io
+  我的码云: //gitee.com/DFLXM
+  慕课网: //www.imooc.com/
+  必应: //www.google.com
+  
+about:
+  enable: true
+  image: '/intro/about-bg.jpg'
+
+# ========== Site ========== #
+# title of the site
+SEO_title: 小明崽的个人博客
+# main title
+main_title: 敲代码的🐷
+# subtitle
+subtitle: 这个人很懒，什么都没有
+# site haeder image
+site_header_image: '/intro/index-bg.jpg'
+# post haeder image
+post_header_image: '/intro/post-bg.jpg'
+# 404 image
+_404_image: '/intro/404-bg.jpg'
+
+# ========== Comment ========== #
+# Fill in the field to enable the corresponding comment plugin
+# If you want to add other comment plugin, edit in "custom.ejs"
+comment:
+  # Livere  site: https://livere.com/
+  livere_uid: 
+  # Disqus  site: https://disqus.com/
+  disqus_shortname: 
+  # Changyan  site: http://changyan.kuaizhan.com/
+  changyan_appid: 
+  changyan_conf: 
+  # Gitment  site: https://github.com/imsun/gitment
+  gitment_owner: 
+  gitment_repo: 
+  gitment_client_id: 
+  gitment_client_secret: 
+  # Youyan  site: http://www.uyan.cc/
+  youyan_uid: 
+
+# ========== Analytics ========== #
+# Busuanzi pv analytics
+busuanzi: true
+# Baidu analytics
+baidu_analytics: 
+# Google analytics
+google_analytics: 
+# CNZZ analytics
+CNZZ_analytics: 
+
+# ========== Others ========== #
+# favicon
+favicon: /assets/favicon.ico
+# truncate length of abstracts in index page (the default is 300, there will be no abstruct if you input 0)
+truncate_length: 
+# enable toc
+toc: true
+# intro height (the default is 50 percents of the screen, you can input other number)
+index_intro_height: 50
+post_intro_height: 50
+about_intro_height: 50
+# copyright
+copyright:
+  enable: false
+  # https://creativecommons.org/
+  license: '我瞎写的你也信？'
