@@ -1,14 +1,14 @@
 # ========== Profile ========== #
 # avatar
-avatar: /avatar/dflxm.jpeg
+avatar: /avatar/sb.jpg
 # author name
-author: 小明崽
+author: zoe.wang
 # signature
-signature: 联系我
+signature: 不要联系我
 # SNS
 social:
   email: 335098623@qq.com
-  github: //github.com/akitsukiWong
+  # github: //github.com/akitsukiWong
   # wechat and qq should be a path of qr-code image
   wechat: /assets/wx.png
   qq: 
@@ -27,20 +27,21 @@ social:
 
 # friends
 friends:
-  我的简历: //dflxm.oschina.io
-  我的码云: //gitee.com/DFLXM
-  慕课网: //www.imooc.com/
-  必应: //www.google.com
+  # 我的简历: //dflxm.oschina.io
+  # 我的码云: //gitee.com/DFLXM
+  # 慕课网: //www.imooc.com/
+  百度: //www.baidu.com
+  谷歌: //www.google.com
   
 about:
-  enable: true
+  enable: false
   image: '/intro/about-bg.jpg'
 
 # ========== Site ========== #
 # title of the site
-SEO_title: 小明崽的个人博客
+SEO_title: 分享专用
 # main title
-main_title: 敲代码的🐷
+main_title: 技术分享专用
 # subtitle
 subtitle: 这个人很懒，什么都没有
 # site haeder image
