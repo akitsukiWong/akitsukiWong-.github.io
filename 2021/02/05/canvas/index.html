@@ -401,14 +401,15 @@ height:50vh;
 <li>制作图形编辑器等工具</li>
 <li>用于可视化领域</li>
 <li>可内嵌多种媒体内容和特效内容</li>
-<li>游戏</li>
+<li>游戏，适合图像密集，其中的许多对象会被频繁重绘的游戏</li>
 </ul>
 <h2 id="canvas-和-svg-的简单对比"><a href="#canvas-和-svg-的简单对比" class="headerlink" title="canvas 和 svg 的简单对比"></a>canvas 和 svg 的简单对比</h2><ul>
-<li>canvas 是基于像素的图形，也就是<a href="https://baike.baidu.com/item/%E4%BD%8D%E5%9B%BE" target="_blank" rel="noopener">位图</a>，svg 是<a href="https://baike.baidu.com/item/%E7%9F%A2%E9%87%8F%E5%9B%BE" target="_blank" rel="noopener">矢量图</a></li>
 <li>canvas 是HTML5标签，svg 是XML标签</li>
-<li>canvas 不支持事件处理器，svg 支持</li>
+<li>canvas 是基于像素的图形，也就是<a href="https://baike.baidu.com/item/%E4%BD%8D%E5%9B%BE" target="_blank" rel="noopener">位图</a>，svg 是<a href="https://baike.baidu.com/item/%E7%9F%A2%E9%87%8F%E5%9B%BE" target="_blank" rel="noopener">矢量图</a>，所以canvas依赖分辨率，放大会失真，产生锯齿，svg不会，所以svg更适合做高保真的视觉呈现</li>
+<li>canvas 不支持事件处理器，svg 支持，因为svg绘制出来的每一个图形的元素都是独立的DOM节点，能够方便的绑定事件或用来修改，canvas是一整张画布</li>
+<li>canvas 能够以 <code>.png</code> 或 <code>.jpg</code> 格式保存结果图像</li>
+<li>canvas 适合游戏，svg不适合做游戏</li>
 </ul>
-<p><a href="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983%28v=vs.85%29?redirectedfrom=MSDN" target="_blank" rel="noopener">更多</a></p>
 <h2 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;100&quot;&gt;您的浏览器不支持canvas，请升级或选择其他浏览器&lt;/canvas&gt;</span><br></pre></td></tr></table></figure>
 <p>与其他标签一样，我们可以使用<code>&lt;canvas&gt;&lt;/canvas&gt;</code>的方式来向页面中嵌入一个画布内容。</p>
 <p>标签里的内容只在不支持 <code>canvas</code> 的浏览器上才会显示</p>
