@@ -22,15 +22,17 @@ date: 2021-02-05 09:53:00
 - 制作图形编辑器等工具
 - 用于可视化领域
 - 可内嵌多种媒体内容和特效内容
-- 游戏
+- 游戏，适合图像密集，其中的许多对象会被频繁重绘的游戏
 
 ## canvas 和 svg 的简单对比
 
-- canvas 是基于像素的图形，也就是[位图](https://baike.baidu.com/item/%E4%BD%8D%E5%9B%BE)，svg 是[矢量图](https://baike.baidu.com/item/%E7%9F%A2%E9%87%8F%E5%9B%BE)
 - canvas 是HTML5标签，svg 是XML标签
-- canvas 不支持事件处理器，svg 支持
+- canvas 是基于像素的图形，也就是[位图](https://baike.baidu.com/item/%E4%BD%8D%E5%9B%BE)，svg 是[矢量图](https://baike.baidu.com/item/%E7%9F%A2%E9%87%8F%E5%9B%BE)，所以canvas依赖分辨率，放大会失真，产生锯齿，svg不会，所以svg更适合做高保真的视觉呈现
+- canvas 不支持事件处理器，svg 支持，因为svg绘制出来的每一个图形的元素都是独立的DOM节点，能够方便的绑定事件或用来修改，canvas是一整张画布
+- canvas 能够以 `.png` 或 `.jpg` 格式保存结果图像
+- canvas 适合游戏，svg不适合做游戏
 
-[更多](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983%28v=vs.85%29?redirectedfrom=MSDN)
+
 
 ## 简单使用
 
